@@ -1,0 +1,1 @@
+{"method": "zo", "data": "full", "split_at": 20, "lora_layers": null, "rank": 4, "lr": 0.0001, "eps": 0.001, "batch": 64, "steps": 30000, "eval_every": 1000, "seed": 42, "out": "rl_runs/zo_full_lr0.0001_s42_long", "n_train": 1024}

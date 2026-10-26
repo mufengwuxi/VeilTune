@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/workspace/veiltune/rl_plain.py", line 248, in <module>
+    main()
+  File "/workspace/veiltune/rl_plain.py", line 159, in main
+    C = build_cache(a.split_at)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/rl_plain.py", line 48, in build_cache
+    return c
+           ^
+UnboundLocalError: cannot access local variable 'c' where it is not associated with a value
