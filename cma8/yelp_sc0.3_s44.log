@@ -1,0 +1,19 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 8144.24it/s]
+{"step": 0, "dev_acc": 0.787109375, "dev_loss": 0.5852138102054596, "test_acc": 0.811}
+{"step": 25, "dev_acc": 0.869140625, "dev_loss": 0.46900051832199097, "test_acc": 0.8865, "mean_abs_c": 0.12867586489766836, "sec": 18.7}
+{"step": 50, "dev_acc": 0.876953125, "dev_loss": 0.5808834582567215, "test_acc": 0.8915, "mean_abs_c": 0.004182609702693299, "sec": 35.6}
+{"step": 75, "dev_acc": 0.884765625, "dev_loss": 0.8222757577896118, "test_acc": 0.9, "mean_abs_c": 0.00015443334010342369, "sec": 50.7}
+{"step": 100, "dev_acc": 0.89453125, "dev_loss": 0.9769250154495239, "test_acc": 0.9055, "mean_abs_c": 3.949494744119874e-06, "sec": 65.0}
+{"step": 125, "dev_acc": 0.876953125, "dev_loss": 1.315286099910736, "test_acc": 0.901, "mean_abs_c": 2.162156768292789e-07, "sec": 79.2}
+{"step": 150, "dev_acc": 0.873046875, "dev_loss": 1.4712278842926025, "test_acc": 0.902, "mean_abs_c": 5.811452234993908e-09, "sec": 93.2}
+{"step": 175, "dev_acc": 0.876953125, "dev_loss": 1.450164794921875, "test_acc": 0.904, "mean_abs_c": 0.0, "sec": 107.2}
+{"step": 200, "dev_acc": 0.87890625, "dev_loss": 1.4323884844779968, "test_acc": 0.905, "mean_abs_c": 0.0, "sec": 121.4}
+{"step": 225, "dev_acc": 0.880859375, "dev_loss": 1.4157394766807556, "test_acc": 0.9035, "mean_abs_c": 0.0, "sec": 135.7}
+{"step": 250, "dev_acc": 0.880859375, "dev_loss": 1.4006871581077576, "test_acc": 0.904, "mean_abs_c": 0.0, "sec": 150.4}
+{"step": 275, "dev_acc": 0.876953125, "dev_loss": 1.4331562519073486, "test_acc": 0.9035, "mean_abs_c": 0.0, "sec": 172.1}
+{"step": 300, "dev_acc": 0.873046875, "dev_loss": 1.443717122077942, "test_acc": 0.905, "mean_abs_c": 0.0, "sec": 187.1}
+{"step": 325, "dev_acc": 0.873046875, "dev_loss": 1.4629544019699097, "test_acc": 0.9035, "mean_abs_c": 0.0, "sec": 201.8}
+{"step": 350, "dev_acc": 0.873046875, "dev_loss": 1.4540410041809082, "test_acc": 0.904, "mean_abs_c": 0.0, "sec": 216.1}
+{"step": 375, "dev_acc": 0.873046875, "dev_loss": 1.4551457166671753, "test_acc": 0.9035, "mean_abs_c": 0.0, "sec": 230.4}
+{"step": 400, "dev_acc": 0.873046875, "dev_loss": 1.4290168285369873, "test_acc": 0.904, "mean_abs_c": 0.0, "sec": 244.7}

@@ -1,0 +1,1 @@
+{"method": "cma", "data": "k16", "split_at": 16, "lora_layers": null, "rank": 4, "lr": 0.0001, "eps": 0.001, "batch": 64, "steps": 400, "eval_every": 50, "seed": 42, "out": "cma8/tune_sst2_sc1_s42", "opt": "adamw", "cma_dim": 500, "cma_pop": 20, "cma_scale": 1.0, "cma_sigma": 1.0, "n_train": 32}
