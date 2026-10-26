@@ -1,0 +1,1 @@
+{"method": "fo", "data": "full", "split_at": 20, "lora_layers": null, "rank": 4, "lr": 0.0001, "eps": 0.001, "batch": 64, "steps": 2000, "eval_every": 100, "seed": 44, "out": "rl_runs3/fo_full_lr1e-4_s44", "n_train": 1024}

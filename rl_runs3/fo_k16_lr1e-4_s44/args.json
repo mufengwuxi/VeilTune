@@ -1,0 +1,1 @@
+{"method": "fo", "data": "k16", "split_at": 20, "lora_layers": null, "rank": 4, "lr": 0.0001, "eps": 0.001, "batch": 32, "steps": 1000, "eval_every": 50, "seed": 44, "out": "rl_runs3/fo_k16_lr1e-4_s44", "n_train": 32}
