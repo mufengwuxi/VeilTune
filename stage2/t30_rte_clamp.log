@@ -1,0 +1,38 @@
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 8101.32it/s]
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 8903.52it/s]
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/provider/ttp_provider.py:40: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c_size = getattr(torch, op)(a, b, *args, **kwargs).size()
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/provider/ttp_provider.py:317: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c = getattr(torch, op)(a, b, *args, **kwargs)
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/beaver.py:82: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c._tensor += getattr(torch, op)(epsilon, b._tensor, *args, **kwargs)
+T29 gmax per batch [(16718284.393753052, ('mul@gpu_crypten_bp3.py:27:gelu_save', 1, 25.886306762695312, 1.0)), (16766534.418197632, ('mul@gpu_crypten_bp3.py:22:gelu_save', 1, 1.0, 24.154891967773438)), (0.0051422119140625, None), (16743405.790527344, ('mul@gpu_crypten_bp3.py:18:gelu_save', 1, 39.38755798339844, 39.38755798339844))]
+T29 total bad elements 129
+T29 mul@gpu_crypten_bp2.py:122:_ln_save_scaled calls 136 elems 134307800 bad 124 max|ref| 5994574271.8
+T29 mul@gpu_crypten_v2.py:150:rsqrt_newton calls 136 elems 524128 bad 1 max|ref| 12309911019.0
+T29 mul@gpu_crypten_v2.py:151:rsqrt_newton calls 408 elems 786192 bad 1 max|ref| 1066392351.9
+T29 mul@gpu_crypten_bp3.py:18:gelu_save calls 36 elems 268222464 bad 1 max|ref| 2549.9
+T29 mul@gpu_crypten_bp3.py:22:gelu_save calls 72 elems 536444928 bad 1 max|ref| 159.4
+T29 mul@gpu_crypten_bp3.py:27:gelu_save calls 180 elems 2682224640 bad 1 max|ref| 28.9
+T29 matmul@gpu_crypten_bp.py:70:<lambda> calls 512 elems 1739951408 bad 0 max|ref| 1465.3
+T29 mul@gpu_crypten_bp.py:108:loss_grad calls 32 elems 67022848 bad 0 max|ref| 67000.9
+T29 mul@gpu_crypten_bp2.py:121:_ln_save_scaled calls 68 elems 134176768 bad 0 max|ref| 77424.6
+T29 mul@gpu_crypten_bp2.py:123:_ln_save_scaled calls 68 elems 131032 bad 0 max|ref| 161488.6

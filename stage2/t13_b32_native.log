@@ -1,0 +1,45 @@
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 49/394 [00:00<00:00, 427.40it/s]Loading weights:  15%|█▍        | 59/394 [00:00<00:00, 430.12it/s]Loading weights:  29%|██▊       | 113/394 [00:00<00:00, 536.98it/s]Loading weights:  31%|███▏      | 124/394 [00:00<00:00, 531.58it/s]Loading weights:  43%|████▎     | 168/394 [00:00<00:00, 534.65it/s]Loading weights:  45%|████▌     | 179/394 [00:00<00:00, 268.81it/s]Loading weights:  56%|█████▋    | 222/394 [00:00<00:00, 283.71it/s]Loading weights:  66%|██████▌   | 261/394 [00:01<00:00, 176.81it/s]Loading weights:  61%|██████    | 239/394 [00:01<00:00, 176.18it/s]Loading weights:  91%|█████████▏| 360/394 [00:01<00:00, 302.54it/s]Loading weights: 100%|██████████| 394/394 [00:01<00:00, 329.21it/s]
+Loading weights: 100%|██████████| 394/394 [00:01<00:00, 329.99it/s]
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/provider/ttp_provider.py:40: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c_size = getattr(torch, op)(a, b, *args, **kwargs).size()
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/provider/ttp_provider.py:317: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c = getattr(torch, op)(a, b, *args, **kwargs)
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/beaver.py:82: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c._tensor += getattr(torch, op)(epsilon, b._tensor, *args, **kwargs)
+T13 total_s 28.22 rounds 1673 GB 36.64 N 628
+T13 fwd softmax_save softmax_save max 552 13.259 552
+T13 fwd gelu_save gelu_save mul 189 9.303 189
+T13 fwd gelu_save gelu_save cmp 72 7.849 72
+T13 bwd linear linear matmul 94 1.835 94
+T13 fwd softmax_save softmax_save mul 296 1.353 296
+T13 fwd linear linear matmul 48 0.887 48
+T13 bwd ln_bwd ln_bwd mul 51 0.583 51
+T13 bwd linear linear mul 9 0.581 9
+T13 bwd softmax_bwd softmax_bwd mul 16 0.552 16
+T13 fwd ln_save ln_save mul 323 0.44 323
+T13 fwd _sigmoid _sigmoid cmp 8 0.0 8
+T13 fwd _sigmoid _sigmoid mul 15 0.0 15
+T13T fwd softmax_save 8.01
+T13T fwd gelu_save 7.48
+T13T fwd ln_save 1.07
+T13T bwd ln_bwd 0.43
+T13T bwd softmax_bwd 0.26
+T13T fwd _sigmoid 0.05

@@ -1,0 +1,17 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 394/394 [00:00<00:00, 7331.63it/s]
+Traceback (most recent call last):
+  File "/workspace/veiltune/rl_leak.py", line 260, in <module>
+    main()
+  File "/workspace/veiltune/rl_leak.py", line 59, in main
+    C = RP.build_cache(SPLIT, extra=('owner',))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/rl_plain.py", line 86, in build_cache
+    torch.save(out, tmp); os.replace(tmp, f)      # atomic: concurrent runs may be loading f
+                          ^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/veiltune/rl_cache_agnews/h16.tmp' -> '/workspace/veiltune/rl_cache_agnews/h16.pt'

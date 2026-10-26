@@ -1,0 +1,794 @@
+[
+ {
+  "model": "bert-mini",
+  "seq": 16,
+  "rep": 0,
+  "ok": true,
+  "p0_dealer": {
+   "Total time": 59068,
+   "Key size": 148353024
+  },
+  "p0_eval": {
+   "Total time": 309038,
+   "Comm time": 21348,
+   "Transfer time": 109767,
+   "MHA time": 171152,
+   "Matmul time": 15817,
+   "Truncate time": 19554,
+   "Gelu time": 15752,
+   "Softmax time": 110387,
+   "Layernorm time": 85426,
+   "Total Comm": 7583570,
+   "Gelu Comm": 1736704,
+   "Softmax Comm": 366208,
+   "Layernorm Comm": 1243344
+  },
+  "p1_dealer": {
+   "Total time": 59564,
+   "Key size": 148353024
+  },
+  "p1_eval": {
+   "Total time": 308876,
+   "Comm time": 23392,
+   "Transfer time": 106915,
+   "MHA time": 171434,
+   "Matmul time": 16648,
+   "Truncate time": 19541,
+   "Gelu time": 15235,
+   "Softmax time": 110387,
+   "Layernorm time": 84769,
+   "Total Comm": 7583570,
+   "Gelu Comm": 1736704,
+   "Softmax Comm": 366208,
+   "Layernorm Comm": 1243344
+  }
+ },
+ {
+  "model": "bert-mini",
+  "seq": 16,
+  "rep": 1,
+  "ok": true,
+  "p0_dealer": {
+   "Total time": 58287,
+   "Key size": 148353024
+  },
+  "p0_eval": {
+   "Total time": 299806,
+   "Comm time": 22134,
+   "Transfer time": 110960,
+   "MHA time": 169950,
+   "Matmul time": 15487,
+   "Truncate time": 19406,
+   "Gelu time": 15992,
+   "Softmax time": 111557,
+   "Layernorm time": 77719,
+   "Total Comm": 7583570,
+   "Gelu Comm": 1736704,
+   "Softmax Comm": 366208,
+   "Layernorm Comm": 1243344
+  },
+  "p1_dealer": {
+   "Total time": 60269,
+   "Key size": 148353024
+  },
+  "p1_eval": {
+   "Total time": 299941,
+   "Comm time": 23518,
+   "Transfer time": 107026,
+   "MHA time": 170550,
+   "Matmul time": 16973,
+   "Truncate time": 19639,
+   "Gelu time": 15043,
+   "Softmax time": 111173,
+   "Layernorm time": 76554,
+   "Total Comm": 7583570,
+   "Gelu Comm": 1736704,
+   "Softmax Comm": 366208,
+   "Layernorm Comm": 1243344
+  }
+ },
+ {
+  "model": "bert-mini",
+  "seq": 16,
+  "rep": 2,
+  "ok": true,
+  "p0_dealer": {
+   "Total time": 57109,
+   "Key size": 148353024
+  },
+  "p0_eval": {
+   "Total time": 320665,
+   "Comm time": 26689,
+   "Transfer time": 109017,
+   "MHA time": 175232,
+   "Matmul time": 15967,
+   "Truncate time": 19716,
+   "Gelu time": 15374,
+   "Softmax time": 108457,
+   "Layernorm time": 93124,
+   "Total Comm": 7583570,
+   "Gelu Comm": 1736704,
+   "Softmax Comm": 366208,
+   "Layernorm Comm": 1243344
+  },
+  "p1_dealer": {
+   "Total time": 56139,
+   "Key size": 148353024
+  },
+  "p1_eval": {
+   "Total time": 320865,
+   "Comm time": 20119,
+   "Transfer time": 106882,
+   "MHA time": 175402,
+   "Matmul time": 16435,
+   "Truncate time": 19443,
+   "Gelu time": 15130,
+   "Softmax time": 108221,
+   "Layernorm time": 93185,
+   "Total Comm": 7583570,
+   "Gelu Comm": 1736704,
+   "Softmax Comm": 366208,
+   "Layernorm Comm": 1243344
+  }
+ },
+ {
+  "model": "bert-mini",
+  "seq": 32,
+  "rep": 0,
+  "ok": true,
+  "p0_dealer": {
+   "Total time": 62086,
+   "Key size": 285806592
+  },
+  "p0_eval": {
+   "Total time": 317157,
+   "Comm time": 20505,
+   "Transfer time": 104984,
+   "MHA time": 154507,
+   "Matmul time": 15934,
+   "Truncate time": 21115,
+   "Gelu time": 16503,
+   "Softmax time": 97972,
+   "Layernorm time": 107858,
+   "Total Comm": 16092402,
+   "Gelu Comm": 3473408,
+   "Softmax Comm": 1457536,
+   "Layernorm Comm": 2486128
+  },
+  "p1_dealer": {
+   "Total time": 62971,
+   "Key size": 285806592
+  },
+  "p1_eval": {
+   "Total time": 317030,
+   "Comm time": 28754,
+   "Transfer time": 95679,
+   "MHA time": 154592,
+   "Matmul time": 16774,
+   "Truncate time": 20973,
+   "Gelu time": 16036,
+   "Softmax time": 97648,
+   "Layernorm time": 107354,
+   "Total Comm": 16092402,
+   "Gelu Comm": 3473408,
+   "Softmax Comm": 1457536,
+   "Layernorm Comm": 2486128
+  }
+ },
+ {
+  "model": "bert-mini",
+  "seq": 32,
+  "rep": 1,
+  "ok": true,
+  "p0_dealer": {
+   "Total time": 69165,
+   "Key size": 285806592
+  },
+  "p0_eval": {
+   "Total time": 294976,
+   "Comm time": 24403,
+   "Transfer time": 101294,
+   "MHA time": 155162,
+   "Matmul time": 16236,
+   "Truncate time": 21326,
+   "Gelu time": 16771,
+   "Softmax time": 99808,
+   "Layernorm time": 84141,
+   "Total Comm": 16092402,
+   "Gelu Comm": 3473408,
+   "Softmax Comm": 1457536,
+   "Layernorm Comm": 2486128
+  },
+  "p1_dealer": {
+   "Total time": 95631,
+   "Key size": 285806592
+  },
+  "p1_eval": {
+   "Total time": 295224,
+   "Comm time": 27448,
+   "Transfer time": 95121,
+   "MHA time": 155637,
+   "Matmul time": 16384,
+   "Truncate time": 21344,
+   "Gelu time": 16880,
+   "Softmax time": 99505,
+   "Layernorm time": 83539,
+   "Total Comm": 16092402,
+   "Gelu Comm": 3473408,
+   "Softmax Comm": 1457536,
+   "Layernorm Comm": 2486128
+  }
+ },
+ {
+  "model": "bert-mini",
+  "seq": 32,
+  "rep": 2,
+  "ok": true,
+  "p0_dealer": {
+   "Total time": 67781,
+   "Key size": 285806592
+  },
+  "p0_eval": {
+   "Total time": 288929,
+   "Comm time": 23008,
+   "Transfer time": 99392,
+   "MHA time": 152309,
+   "Matmul time": 15729,
+   "Truncate time": 20690,
+   "Gelu time": 19695,
+   "Softmax time": 98157,
+   "Layernorm time": 79194,
+   "Total Comm": 16092402,
+   "Gelu Comm": 3473408,
+   "Softmax Comm": 1457536,
+   "Layernorm Comm": 2486128
+  },
+  "p1_dealer": {
+   "Total time": 61374,
+   "Key size": 285806592
+  },
+  "p1_eval": {
+   "Total time": 288869,
+   "Comm time": 25777,
+   "Transfer time": 95204,
+   "MHA time": 152725,
+   "Matmul time": 16226,
+   "Truncate time": 20792,
+   "Gelu time": 19194,
+   "Softmax time": 98149,
+   "Layernorm time": 78638,
+   "Total Comm": 16092402,
+   "Gelu Comm": 3473408,
+   "Softmax Comm": 1457536,
+   "Layernorm Comm": 2486128
+  }
+ },
+ {
+  "model": "bert-mini",
+  "seq": 64,
+  "rep": 0,
+  "ok": true,
+  "p0_dealer": {
+   "Total time": 76011,
+   "Key size": 603553792
+  },
+  "p0_eval": {
+   "Total time": 317907,
+   "Comm time": 36863,
+   "Transfer time": 106076,
+   "MHA time": 154344,
+   "Matmul time": 17088,
+   "Truncate time": 24889,
+   "Gelu time": 20728,
+   "Softmax time": 95989,
+   "Layernorm time": 99423,
+   "Total Comm": 35887410,
+   "Gelu Comm": 6946816,
+   "Softmax Comm": 5815296,
+   "Layernorm Comm": 4971824
+  },
+  "p1_dealer": {
+   "Total time": 70355,
+   "Key size": 603553792
+  },
+  "p1_eval": {
+   "Total time": 317816,
+   "Comm time": 31127,
+   "Transfer time": 108066,
+   "MHA time": 154855,
+   "Matmul time": 16660,
+   "Truncate time": 25292,
+   "Gelu time": 20596,
+   "Softmax time": 95672,
+   "Layernorm time": 99053,
+   "Total Comm": 35887410,
+   "Gelu Comm": 6946816,
+   "Softmax Comm": 5815296,
+   "Layernorm Comm": 4971824
+  }
+ },
+ {
+  "model": "bert-mini",
+  "seq": 64,
+  "rep": 1,
+  "ok": true,
+  "p0_dealer": {
+   "Total time": 71511,
+   "Key size": 603553792
+  },
+  "p0_eval": {
+   "Total time": 313202,
+   "Comm time": 26235,
+   "Transfer time": 107058,
+   "MHA time": 158708,
+   "Matmul time": 16222,
+   "Truncate time": 25232,
+   "Gelu time": 19966,
+   "Softmax time": 100428,
+   "Layernorm time": 91661,
+   "Total Comm": 35887410,
+   "Gelu Comm": 6946816,
+   "Softmax Comm": 5815296,
+   "Layernorm Comm": 4971824
+  },
+  "p1_dealer": {
+   "Total time": 70305,
+   "Key size": 603553792
+  },
+  "p1_eval": {
+   "Total time": 313257,
+   "Comm time": 34033,
+   "Transfer time": 100975,
+   "MHA time": 159185,
+   "Matmul time": 16794,
+   "Truncate time": 24834,
+   "Gelu time": 19936,
+   "Softmax time": 99944,
+   "Layernorm time": 91126,
+   "Total Comm": 35887410,
+   "Gelu Comm": 6946816,
+   "Softmax Comm": 5815296,
+   "Layernorm Comm": 4971824
+  }
+ },
+ {
+  "model": "bert-mini",
+  "seq": 64,
+  "rep": 2,
+  "ok": true,
+  "p0_dealer": {
+   "Total time": 71668,
+   "Key size": 603553792
+  },
+  "p0_eval": {
+   "Total time": 320944,
+   "Comm time": 41286,
+   "Transfer time": 107925,
+   "MHA time": 164561,
+   "Matmul time": 15845,
+   "Truncate time": 25077,
+   "Gelu time": 20252,
+   "Softmax time": 106295,
+   "Layernorm time": 93828,
+   "Total Comm": 35887410,
+   "Gelu Comm": 6946816,
+   "Softmax Comm": 5815296,
+   "Layernorm Comm": 4971824
+  },
+  "p1_dealer": {
+   "Total time": 70604,
+   "Key size": 603553792
+  },
+  "p1_eval": {
+   "Total time": 321022,
+   "Comm time": 30036,
+   "Transfer time": 110094,
+   "MHA time": 165041,
+   "Matmul time": 17104,
+   "Truncate time": 24857,
+   "Gelu time": 19853,
+   "Softmax time": 106220,
+   "Layernorm time": 92816,
+   "Total Comm": 35887410,
+   "Gelu Comm": 6946816,
+   "Softmax Comm": 5815296,
+   "Layernorm Comm": 4971824
+  }
+ },
+ {
+  "model": "bert-tiny",
+  "seq": 16,
+  "rep": 0,
+  "ok": true,
+  "p0_dealer": {
+   "Total time": 35363,
+   "Key size": 34021376
+  },
+  "p0_eval": {
+   "Total time": 155405,
+   "Comm time": 17683,
+   "Transfer time": 54692,
+   "MHA time": 85320,
+   "Matmul time": 5620,
+   "Truncate time": 9773,
+   "Gelu time": 8018,
+   "Softmax time": 54715,
+   "Layernorm time": 45749,
+   "Total Comm": 1899578,
+   "Gelu Comm": 434176,
+   "Softmax Comm": 91600,
+   "Layernorm Comm": 314472
+  },
+  "p1_dealer": {
+   "Total time": 34123,
+   "Key size": 34021376
+  },
+  "p1_eval": {
+   "Total time": 155341,
+   "Comm time": 10290,
+   "Transfer time": 53580,
+   "MHA time": 85697,
+   "Matmul time": 6350,
+   "Truncate time": 9775,
+   "Gelu time": 7284,
+   "Softmax time": 54713,
+   "Layernorm time": 45247,
+   "Total Comm": 1899578,
+   "Gelu Comm": 434176,
+   "Softmax Comm": 91600,
+   "Layernorm Comm": 314472
+  }
+ },
+ {
+  "model": "bert-tiny",
+  "seq": 16,
+  "rep": 1,
+  "ok": true,
+  "p0_dealer": {
+   "Total time": 64373,
+   "Key size": 34021376
+  },
+  "p0_eval": {
+   "Total time": 154735,
+   "Comm time": 14542,
+   "Transfer time": 54607,
+   "MHA time": 91436,
+   "Matmul time": 5610,
+   "Truncate time": 10087,
+   "Gelu time": 8141,
+   "Softmax time": 54288,
+   "Layernorm time": 38522,
+   "Total Comm": 1899578,
+   "Gelu Comm": 434176,
+   "Softmax Comm": 91600,
+   "Layernorm Comm": 314472
+  },
+  "p1_dealer": {
+   "Total time": 46672,
+   "Key size": 34021376
+  },
+  "p1_eval": {
+   "Total time": 154676,
+   "Comm time": 14335,
+   "Transfer time": 53845,
+   "MHA time": 91827,
+   "Matmul time": 6334,
+   "Truncate time": 9959,
+   "Gelu time": 7544,
+   "Softmax time": 54669,
+   "Layernorm time": 38147,
+   "Total Comm": 1899578,
+   "Gelu Comm": 434176,
+   "Softmax Comm": 91600,
+   "Layernorm Comm": 314472
+  }
+ },
+ {
+  "model": "bert-tiny",
+  "seq": 16,
+  "rep": 2,
+  "ok": true,
+  "p0_dealer": {
+   "Total time": 47478,
+   "Key size": 34021376
+  },
+  "p0_eval": {
+   "Total time": 155591,
+   "Comm time": 14645,
+   "Transfer time": 55184,
+   "MHA time": 88979,
+   "Matmul time": 5851,
+   "Truncate time": 10267,
+   "Gelu time": 8272,
+   "Softmax time": 54988,
+   "Layernorm time": 41189,
+   "Total Comm": 1899578,
+   "Gelu Comm": 434176,
+   "Softmax Comm": 91600,
+   "Layernorm Comm": 314472
+  },
+  "p1_dealer": {
+   "Total time": 34330,
+   "Key size": 34021376
+  },
+  "p1_eval": {
+   "Total time": 155391,
+   "Comm time": 12386,
+   "Transfer time": 56987,
+   "MHA time": 89157,
+   "Matmul time": 6524,
+   "Truncate time": 10320,
+   "Gelu time": 7804,
+   "Softmax time": 54337,
+   "Layernorm time": 40561,
+   "Total Comm": 1899578,
+   "Gelu Comm": 434176,
+   "Softmax Comm": 91600,
+   "Layernorm Comm": 314472
+  }
+ },
+ {
+  "model": "bert-tiny",
+  "seq": 32,
+  "rep": 0,
+  "ok": true,
+  "p0_dealer": {
+   "Total time": 70658,
+   "Key size": 68460544
+  },
+  "p0_eval": {
+   "Total time": 151781,
+   "Comm time": 15676,
+   "Transfer time": 49199,
+   "MHA time": 88162,
+   "Matmul time": 5420,
+   "Truncate time": 9928,
+   "Gelu time": 7681,
+   "Softmax time": 57352,
+   "Layernorm time": 39825,
+   "Total Comm": 4030234,
+   "Gelu Comm": 868352,
+   "Softmax Comm": 364384,
+   "Layernorm Comm": 628664
+  },
+  "p1_dealer": {
+   "Total time": 36107,
+   "Key size": 68460544
+  },
+  "p1_eval": {
+   "Total time": 151701,
+   "Comm time": 14778,
+   "Transfer time": 51802,
+   "MHA time": 88337,
+   "Matmul time": 5941,
+   "Truncate time": 9919,
+   "Gelu time": 7684,
+   "Softmax time": 57352,
+   "Layernorm time": 39065,
+   "Total Comm": 4030234,
+   "Gelu Comm": 868352,
+   "Softmax Comm": 364384,
+   "Layernorm Comm": 628664
+  }
+ },
+ {
+  "model": "bert-tiny",
+  "seq": 32,
+  "rep": 1,
+  "ok": true,
+  "p0_dealer": {
+   "Total time": 78147,
+   "Key size": 68460544
+  },
+  "p0_eval": {
+   "Total time": 147493,
+   "Comm time": 12870,
+   "Transfer time": 50056,
+   "MHA time": 83584,
+   "Matmul time": 4683,
+   "Truncate time": 9823,
+   "Gelu time": 8371,
+   "Softmax time": 55580,
+   "Layernorm time": 40004,
+   "Total Comm": 4030234,
+   "Gelu Comm": 868352,
+   "Softmax Comm": 364384,
+   "Layernorm Comm": 628664
+  },
+  "p1_dealer": {
+   "Total time": 36842,
+   "Key size": 68460544
+  },
+  "p1_eval": {
+   "Total time": 147369,
+   "Comm time": 13830,
+   "Transfer time": 47681,
+   "MHA time": 84004,
+   "Matmul time": 5921,
+   "Truncate time": 10062,
+   "Gelu time": 7631,
+   "Softmax time": 55708,
+   "Layernorm time": 38895,
+   "Total Comm": 4030234,
+   "Gelu Comm": 868352,
+   "Softmax Comm": 364384,
+   "Layernorm Comm": 628664
+  }
+ },
+ {
+  "model": "bert-tiny",
+  "seq": 32,
+  "rep": 2,
+  "ok": true,
+  "p0_dealer": {
+   "Total time": 40431,
+   "Key size": 68460544
+  },
+  "p0_eval": {
+   "Total time": 184322,
+   "Comm time": 22906,
+   "Transfer time": 56752,
+   "MHA time": 91958,
+   "Matmul time": 13230,
+   "Truncate time": 10011,
+   "Gelu time": 7746,
+   "Softmax time": 64312,
+   "Layernorm time": 60610,
+   "Total Comm": 4030234,
+   "Gelu Comm": 868352,
+   "Softmax Comm": 364384,
+   "Layernorm Comm": 628664
+  },
+  "p1_dealer": {
+   "Total time": 37741,
+   "Key size": 68460544
+  },
+  "p1_eval": {
+   "Total time": 184256,
+   "Comm time": 18529,
+   "Transfer time": 52159,
+   "MHA time": 92402,
+   "Matmul time": 13485,
+   "Truncate time": 10133,
+   "Gelu time": 7625,
+   "Softmax time": 64677,
+   "Layernorm time": 59845,
+   "Total Comm": 4030234,
+   "Gelu Comm": 868352,
+   "Softmax Comm": 364384,
+   "Layernorm Comm": 628664
+  }
+ },
+ {
+  "model": "bert-tiny",
+  "seq": 64,
+  "rep": 0,
+  "ok": true,
+  "p0_dealer": {
+   "Total time": 72669,
+   "Key size": 148049920
+  },
+  "p0_eval": {
+   "Total time": 153791,
+   "Comm time": 22128,
+   "Transfer time": 47821,
+   "MHA time": 79550,
+   "Matmul time": 5039,
+   "Truncate time": 10217,
+   "Gelu time": 7997,
+   "Softmax time": 50768,
+   "Layernorm time": 50228,
+   "Total Comm": 8986074,
+   "Gelu Comm": 1736704,
+   "Softmax Comm": 1453824,
+   "Layernorm Comm": 1257176
+  },
+  "p1_dealer": {
+   "Total time": 39705,
+   "Key size": 148049920
+  },
+  "p1_eval": {
+   "Total time": 153733,
+   "Comm time": 12408,
+   "Transfer time": 44094,
+   "MHA time": 79862,
+   "Matmul time": 5828,
+   "Truncate time": 10052,
+   "Gelu time": 7749,
+   "Softmax time": 51149,
+   "Layernorm time": 49479,
+   "Total Comm": 8986074,
+   "Gelu Comm": 1736704,
+   "Softmax Comm": 1453824,
+   "Layernorm Comm": 1257176
+  }
+ },
+ {
+  "model": "bert-tiny",
+  "seq": 64,
+  "rep": 1,
+  "ok": true,
+  "p0_dealer": {
+   "Total time": 39936,
+   "Key size": 148049920
+  },
+  "p0_eval": {
+   "Total time": 145833,
+   "Comm time": 16371,
+   "Transfer time": 47793,
+   "MHA time": 79977,
+   "Matmul time": 5226,
+   "Truncate time": 10037,
+   "Gelu time": 8337,
+   "Softmax time": 50130,
+   "Layernorm time": 41494,
+   "Total Comm": 8986074,
+   "Gelu Comm": 1736704,
+   "Softmax Comm": 1453824,
+   "Layernorm Comm": 1257176
+  },
+  "p1_dealer": {
+   "Total time": 40237,
+   "Key size": 148049920
+  },
+  "p1_eval": {
+   "Total time": 145998,
+   "Comm time": 12084,
+   "Transfer time": 44243,
+   "MHA time": 80272,
+   "Matmul time": 5743,
+   "Truncate time": 10016,
+   "Gelu time": 8077,
+   "Softmax time": 50653,
+   "Layernorm time": 41158,
+   "Total Comm": 8986074,
+   "Gelu Comm": 1736704,
+   "Softmax Comm": 1453824,
+   "Layernorm Comm": 1257176
+  }
+ },
+ {
+  "model": "bert-tiny",
+  "seq": 64,
+  "rep": 2,
+  "ok": true,
+  "p0_dealer": {
+   "Total time": 44595,
+   "Key size": 148049920
+  },
+  "p0_eval": {
+   "Total time": 146456,
+   "Comm time": 11224,
+   "Transfer time": 49618,
+   "MHA time": 77997,
+   "Matmul time": 5653,
+   "Truncate time": 9976,
+   "Gelu time": 8562,
+   "Softmax time": 52160,
+   "Layernorm time": 43414,
+   "Total Comm": 8986074,
+   "Gelu Comm": 1736704,
+   "Softmax Comm": 1453824,
+   "Layernorm Comm": 1257176
+  },
+  "p1_dealer": {
+   "Total time": 41291,
+   "Key size": 148049920
+  },
+  "p1_eval": {
+   "Total time": 146379,
+   "Comm time": 16232,
+   "Transfer time": 45098,
+   "MHA time": 78653,
+   "Matmul time": 5772,
+   "Truncate time": 9724,
+   "Gelu time": 8416,
+   "Softmax time": 51714,
+   "Layernorm time": 43038,
+   "Total Comm": 8986074,
+   "Gelu Comm": 1736704,
+   "Softmax Comm": 1453824,
+   "Layernorm Comm": 1257176
+  }
+ }
+]

@@ -1,0 +1,2 @@
+Total time=40431 us
+Key size=68460544 B (0.063759 GB)

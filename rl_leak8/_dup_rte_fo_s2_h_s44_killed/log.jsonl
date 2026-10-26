@@ -1,0 +1,5 @@
+{"stage": "owner_pretrain", "dev": 0.7857142857142857, "test": 0.7906137184115524, "sec": 368.2}
+{"stage": "theta0", "test": 0.7906137184115524, "n_client": 32}
+{"stage": "protocol", "steps": 1000, "test_thetaT": 0.7725631768953068, "sec": 239.3}
+{"stage": "baseline_local", "test": 0.6570397111913358, "agree_thetaT": 0.7111913357400722}
+{"stage": "baseline_zeroshot", "test": 0.516245487364621}

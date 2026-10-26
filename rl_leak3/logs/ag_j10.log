@@ -1,0 +1,23 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 394/394 [00:00<00:00, 8472.95it/s]
+Traceback (most recent call last):
+  File "/workspace/veiltune/rl_leak.py", line 221, in <module>
+    main()
+  File "/workspace/veiltune/rl_leak.py", line 105, in main
+    theta0, dev0 = first_order(std_init, 'owner', torch.arange(len(C['owner']['y'])), 1e-4, 800, 64, a.seed + 11)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/rl_leak.py", line 87, in first_order
+    dev, _ = evaluate([p.detach() for p in params], 'tune')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/rl_leak.py", line 69, in evaluate
+    p = tail.forward(f32(th), *b[:3], lab).argmax(-1)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/rl_plain.py", line 148, in forward
+    s = sp(q, Tq) @ sp(kk, T).transpose(-1, -2) / math.sqrt(hd) + add
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 256.00 MiB. GPU 0 has a total capacity of 31.36 GiB of which 8.38 MiB is free. Process 31064 has 5.95 GiB memory in use. Process 31066 has 4.56 GiB memory in use. Process 31067 has 1.57 GiB memory in use. Process 37102 has 7.63 GiB memory in use. Process 38266 has 7.62 GiB memory in use. Including non-PyTorch memory, this process has 3.98 GiB memory in use. Of the allocated memory 2.60 GiB is allocated by PyTorch, and 765.05 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

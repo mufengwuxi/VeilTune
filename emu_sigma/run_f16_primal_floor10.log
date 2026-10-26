@@ -1,0 +1,26 @@
+SIGMA_PRECHECK {
+ "f": 16,
+ "mode": "sigma",
+ "sigma_primal": "true",
+ "tangent_lut": "true",
+ "lut_mode": "floor10",
+ "n": 16,
+ "rel_l2_same": 0.008425386618999761,
+ "rel_l2_ref": 0.00767451276601251,
+ "max_rel_same": 0.04624188062317389,
+ "sign_ref": 1.0,
+ "dirs01": [
+  {
+   "sample": 0,
+   "dir": 0,
+   "rel_same": 0.003962400990350103,
+   "rel_ref": 0.003291136799306161
+  },
+  {
+   "sample": 0,
+   "dir": 1,
+   "rel_same": 0.007816851868885396,
+   "rel_ref": 0.006116688276698917
+  }
+ ]
+}

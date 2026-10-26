@@ -1,0 +1,446 @@
+{
+ "0": {
+  "rank": 0,
+  "total_s": 27.613359343260527,
+  "rounds": 2740,
+  "bytes": 38970221936.0,
+  "N_real": 1156,
+  "T": 49,
+  "rows": [
+   {
+    "phase": "fwd",
+    "outer": "gelu_save",
+    "inner": "gelu_save",
+    "prim": "cmp",
+    "rounds": 160,
+    "bytes": 15811488264.0,
+    "calls": 160
+   },
+   {
+    "phase": "fwd",
+    "outer": "gelu_save",
+    "inner": "gelu_save",
+    "prim": "mul",
+    "rounds": 180,
+    "bytes": 9300880560.0,
+    "calls": 180
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "max_tree",
+    "prim": "cmp",
+    "rounds": 768,
+    "bytes": 3957379008.0,
+    "calls": 768
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "exp_free",
+    "prim": "mul",
+    "rounds": 160,
+    "bytes": 3326880160.0,
+    "calls": 160
+   },
+   {
+    "phase": "bwd",
+    "outer": "linear",
+    "inner": "linear",
+    "prim": "matmul",
+    "rounds": 184,
+    "bytes": 2027473936.0,
+    "calls": 184
+   },
+   {
+    "phase": "fwd",
+    "outer": "linear",
+    "inner": "linear",
+    "prim": "matmul",
+    "rounds": 96,
+    "bytes": 1024330304.0,
+    "calls": 96
+   },
+   {
+    "phase": "bwd",
+    "outer": "ln_bwd",
+    "inner": "ln_bwd",
+    "prim": "mul",
+    "rounds": 108,
+    "bytes": 642553128.0,
+    "calls": 108
+   },
+   {
+    "phase": "bwd",
+    "outer": "softmax_bwd",
+    "inner": "softmax_bwd",
+    "prim": "mul",
+    "rounds": 32,
+    "bytes": 594085952.0,
+    "calls": 32
+   },
+   {
+    "phase": "bwd",
+    "outer": "linear",
+    "inner": "linear",
+    "prim": "mul",
+    "rounds": 20,
+    "bytes": 581305560.0,
+    "calls": 20
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "recip_den",
+    "prim": "cmp",
+    "rounds": 128,
+    "bytes": 494674848.0,
+    "calls": 128
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "inner": "ln_save",
+    "prim": "mul",
+    "rounds": 72,
+    "bytes": 467259120.0,
+    "calls": 72
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "max_tree",
+    "prim": "mul",
+    "rounds": 96,
+    "bytes": 290986176.0,
+    "calls": 96
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "softmax_save",
+    "prim": "mul",
+    "rounds": 16,
+    "bytes": 180651040.0,
+    "calls": 16
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "inner": "rsqrt_newton",
+    "prim": "cmp",
+    "rounds": 288,
+    "bytes": 127981224.0,
+    "calls": 288
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "recip_den",
+    "prim": "mul",
+    "rounds": 128,
+    "bytes": 121250112.0,
+    "calls": 128
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "inner": "rsqrt_newton",
+    "prim": "mul",
+    "rounds": 216,
+    "bytes": 20884464.0,
+    "calls": 216
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "_sigmoid",
+    "prim": "cmp",
+    "rounds": 32,
+    "bytes": 106536.0,
+    "calls": 32
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "exp_neg",
+    "prim": "mul",
+    "rounds": 32,
+    "bytes": 28568.0,
+    "calls": 32
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "inv_1p",
+    "prim": "mul",
+    "rounds": 16,
+    "bytes": 17376.0,
+    "calls": 16
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "_sigmoid",
+    "prim": "mul",
+    "rounds": 8,
+    "bytes": 5600.0,
+    "calls": 8
+   }
+  ],
+  "time": [
+   {
+    "phase": "fwd",
+    "outer": "gelu_save",
+    "s": 10.980852887034416
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "s": 5.662310019135475
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "s": 2.079548142850399
+   },
+   {
+    "phase": "bwd",
+    "outer": "ln_bwd",
+    "s": 0.4133780188858509
+   },
+   {
+    "phase": "bwd",
+    "outer": "softmax_bwd",
+    "s": 0.29074815660715103
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "s": 0.13371091708540916
+   }
+  ]
+ },
+ "1": {
+  "rank": 1,
+  "total_s": 27.59846107661724,
+  "rounds": 685,
+  "bytes": 30930322944,
+  "N_real": 1156,
+  "T": 49,
+  "rows": [
+   {
+    "phase": "fwd",
+    "outer": "gelu_save",
+    "inner": "gelu_save",
+    "prim": "cmp",
+    "rounds": 40,
+    "bytes": 12556173312,
+    "calls": 40
+   },
+   {
+    "phase": "fwd",
+    "outer": "gelu_save",
+    "inner": "gelu_save",
+    "prim": "mul",
+    "rounds": 45,
+    "bytes": 7440695296,
+    "calls": 45
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "max_tree",
+    "prim": "cmp",
+    "rounds": 192,
+    "bytes": 3142582272,
+    "calls": 192
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "exp_free",
+    "prim": "mul",
+    "rounds": 40,
+    "bytes": 2613968896,
+    "calls": 40
+   },
+   {
+    "phase": "bwd",
+    "outer": "linear",
+    "inner": "linear",
+    "prim": "matmul",
+    "rounds": 46,
+    "bytes": 1636279040,
+    "calls": 46
+   },
+   {
+    "phase": "fwd",
+    "outer": "linear",
+    "inner": "linear",
+    "prim": "matmul",
+    "rounds": 24,
+    "bytes": 820246272,
+    "calls": 24
+   },
+   {
+    "phase": "bwd",
+    "outer": "softmax_bwd",
+    "inner": "softmax_bwd",
+    "prim": "mul",
+    "rounds": 8,
+    "bytes": 475267072,
+    "calls": 8
+   },
+   {
+    "phase": "bwd",
+    "outer": "ln_bwd",
+    "inner": "ln_bwd",
+    "prim": "mul",
+    "rounds": 27,
+    "bytes": 467368704,
+    "calls": 27
+   },
+   {
+    "phase": "bwd",
+    "outer": "linear",
+    "inner": "linear",
+    "prim": "mul",
+    "rounds": 5,
+    "bytes": 465043456,
+    "calls": 5
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "recip_den",
+    "prim": "cmp",
+    "rounds": 32,
+    "bytes": 392822784,
+    "calls": 32
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "inner": "ln_save",
+    "prim": "mul",
+    "rounds": 18,
+    "bytes": 350469504,
+    "calls": 18
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "max_tree",
+    "prim": "mul",
+    "rounds": 24,
+    "bytes": 232783872,
+    "calls": 24
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "softmax_save",
+    "prim": "mul",
+    "rounds": 4,
+    "bytes": 121241600,
+    "calls": 4
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "inner": "rsqrt_newton",
+    "prim": "cmp",
+    "rounds": 72,
+    "bytes": 101616768,
+    "calls": 72
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "recip_den",
+    "prim": "mul",
+    "rounds": 32,
+    "bytes": 96993280,
+    "calls": 32
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "inner": "rsqrt_newton",
+    "prim": "mul",
+    "rounds": 54,
+    "bytes": 16651008,
+    "calls": 54
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "_sigmoid",
+    "prim": "cmp",
+    "rounds": 8,
+    "bytes": 82944,
+    "calls": 8
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "exp_neg",
+    "prim": "mul",
+    "rounds": 8,
+    "bytes": 20480,
+    "calls": 8
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "inv_1p",
+    "prim": "mul",
+    "rounds": 4,
+    "bytes": 12288,
+    "calls": 4
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "_sigmoid",
+    "prim": "mul",
+    "rounds": 2,
+    "bytes": 4096,
+    "calls": 2
+   }
+  ],
+  "time": [
+   {
+    "phase": "fwd",
+    "outer": "gelu_save",
+    "s": 10.972073700278997
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "s": 5.6734133549034595
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "s": 2.0859736055135727
+   },
+   {
+    "phase": "bwd",
+    "outer": "ln_bwd",
+    "s": 0.41413024067878723
+   },
+   {
+    "phase": "bwd",
+    "outer": "softmax_bwd",
+    "s": 0.3024064972996712
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "s": 0.13465338945388794
+   }
+  ]
+ }
+}

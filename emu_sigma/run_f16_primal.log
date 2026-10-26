@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/workspace/veiltune/emu_sigma/emu_sigma_check.py", line 57, in <module>
+    h, hd = emu.encoder(h0, mask[:n][None, :], pos, theta, us[d])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/emu_sigma/secure_emu_sigma.py", line 186, in encoder
+    g, gt = self.gelu(z, zt)
+            ^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/emu_sigma/secure_emu_sigma.py", line 90, in gelu
+    out = q(gelu_sigma_primal(z, self.fx))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/emu_sigma/secure_emu_sigma.py", line 59, in gelu_sigma_primal
+    res = torch.relu(xq) - gelu_exact(xq)
+                           ^^^^^^^^^^^^^^
+  File "/workspace/veiltune/emu_sigma/secure_emu_sigma.py", line 26, in gelu_exact
+    from torch.nn.functional import erf
+ImportError: cannot import name 'erf' from 'torch.nn.functional' (/root/miniconda3/lib/python3.12/site-packages/torch/nn/functional.py)

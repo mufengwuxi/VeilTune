@@ -1,0 +1,4 @@
+CUDA error at /workspace/fss_build/gpu_mem_lowmem.cu:120 code=1(cudaErrorInvalidValue) "cudaMemcpy(h_a, d_a, size_in_bytes, cudaMemcpyDeviceToHost)" 
+CUDA error: invalid argument
+Model=bert-mini
+reserved memory: 12918456320 18446744073709551615

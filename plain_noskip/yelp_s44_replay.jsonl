@@ -1,0 +1,6 @@
+{"step": 25, "mode": "replay", "dev_acc": 0.87890625, "test_acc": 0.8835}
+{"step": 50, "mode": "replay", "dev_acc": 0.86328125, "test_acc": 0.887}
+{"step": 75, "mode": "replay", "dev_acc": 0.88671875, "test_acc": 0.8985}
+{"step": 100, "mode": "replay", "dev_acc": 0.880859375, "test_acc": 0.9025}
+{"step": 125, "mode": "replay", "dev_acc": 0.87890625, "test_acc": 0.9035}
+{"step": 150, "mode": "replay", "dev_acc": 0.880859375, "test_acc": 0.9025}

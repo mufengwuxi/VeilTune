@@ -1,0 +1,6 @@
+name, driver_version
+NVIDIA RTX PRO 6000 Blackwell Server Edition, 580.82.09
+torch 2.8.0+cu128 cuda 12.8
+5.15.0-78-generic
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"

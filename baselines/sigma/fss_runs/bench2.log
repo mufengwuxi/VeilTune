@@ -1,0 +1,11 @@
+{"model": "bert-base", "seq": 16, "rep": 0, "ok": true, "online_s": 1.08231}
+{"model": "bert-base", "seq": 16, "rep": 1, "ok": true, "online_s": 1.419972}
+{"model": "bert-base", "seq": 16, "rep": 2, "ok": true, "online_s": 1.083979}
+{"model": "bert-base", "seq": 32, "rep": 0, "ok": true, "online_s": 1.138558}
+{"model": "bert-base", "seq": 32, "rep": 1, "ok": true, "online_s": 1.165992}
+{"model": "bert-base", "seq": 32, "rep": 2, "ok": true, "online_s": 1.186207}
+{"model": "bert-base", "seq": 64, "rep": 0, "ok": true, "online_s": 1.607357}
+{"model": "bert-base", "seq": 64, "rep": 1, "ok": true, "online_s": 1.532238}
+{"model": "bert-base", "seq": 64, "rep": 2, "ok": true, "online_s": 1.484843}
+{"model": "bert-mini", "seq": 1024, "rep": 0, "ok": false}
+BENCH_DONE

@@ -1,0 +1,241 @@
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 394/394 [00:00<00:00, 10429.84it/s]
+
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 394/394 [00:00<00:00, 8050.13it/s]
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/provider/ttp_provider.py:40: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c_size = getattr(torch, op)(a, b, *args, **kwargs).size()
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/provider/ttp_provider.py:317: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c = getattr(torch, op)(a, b, *args, **kwargs)
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/beaver.py:82: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c._tensor += getattr(torch, op)(epsilon, b._tensor, *args, **kwargs)
+Process Process-1:
+Traceback (most recent call last):
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/converters.py", line 28, in _A2B
+    binary_tensor = binary_tensor.sum(dim=0)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/binary.py", line 354, in sum
+    x = x0 + x1
+        ~~~^~~~
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/binary.py", line 297, in add
+    return circuit.add(self, y)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/circuit.py", line 129, in add
+    carry, _ = __SPK_circuit(S, P)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/circuit.py", line 83, in __SPK_circuit
+    update = P0 & S1P1                  # S0 ^= P0 & S1, P0 = P0 & P1
+             ~~~^~~~~~
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/binary.py", line 256, in __and__
+    return result.__iand__(y)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/binary.py", line 241, in __iand__
+    self.share.set_(beaver.AND(self, y).share.data)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/beaver.py", line 186, in AND
+    eps_del = BinarySharedTensor.reveal_batch([x ^ a, y ^ b])
+                                                      ~~^~~
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/binary.py", line 230, in __xor__
+    result.share = broadcast_tensors[0].clone()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/cuda/cuda_tensor.py", line 153, in clone
+    result._tensor = self._tensor.clone()
+                     ^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 588.00 MiB. GPU 0 has a total capacity of 31.36 GiB of which 200.38 MiB is free. Including non-PyTorch memory, this process has 11.20 GiB memory in use. Process 45699 has 3.86 GiB memory in use. Process 45698 has 16.07 GiB memory in use. Of the allocated memory 8.64 GiB is allocated by PyTorch, and 1.89 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/root/miniconda3/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/context.py", line 30, in _launch
+    return_value = func(*func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/stage2/t12_rl_secure.py", line 109, in worker
+    grads = ops.loss_grad(h0p.cuda(), lens, pos, th, ysec)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/gpu_crypten_bp.py", line 115, in loss_grad
+    gz_out, gp = self.gelu_save(mm(hmid, w('ff1')) + w('ff1b'))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/gpu_crypten_bp2.py", line 28, in gelu_save
+    return super().gelu_save(z)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/gpu_crypten_bp.py", line 25, in gelu_save
+    g = cmp_lt_batch(s, [0.0, 12.0, -12.0])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/gpu_crypten_v2.py", line 52, in cmp_lt_batch
+    return _gate(crypten.stack([x - float(t) for t in thresholds]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/gpu_crypten_v2.py", line 47, in _gate
+    return (x < 0).to(ARITH)
+            ^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/common/functions/logic.py", line 50, in lt
+    return (self - y)._ltz()
+           ^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/mpc.py", line 238, in _ltz
+    result = self._to_ptype(Ptype.binary)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/mpc.py", line 149, in _to_ptype
+    retval._tensor = convert(self._tensor, ptype, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/converters.py", line 78, in convert
+    return _A2B(tensor)
+           ^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/converters.py", line 35, in _A2B
+    binary_tensor = binary_share if i == 0 else binary_tensor + binary_share
+                                                ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/binary.py", line 297, in add
+    return circuit.add(self, y)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/circuit.py", line 127, in add
+    S = x & y
+        ~~^~~
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/binary.py", line 256, in __and__
+    return result.__iand__(y)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/binary.py", line 241, in __iand__
+    self.share.set_(beaver.AND(self, y).share.data)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/beaver.py", line 183, in AND
+    a, b, c = provider.generate_binary_triple(x.size(), y.size(), device=x.device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/provider/ttp_provider.py", line 69, in generate_binary_triple
+    b = generate_kbit_random_tensor(size1, generator=generator, device=device)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/common/rng.py", line 38, in generate_kbit_random_tensor
+    return generate_random_ring_element(size, generator=generator, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/common/rng.py", line 20, in generate_random_ring_element
+    rand_element = torch.randint(
+                   ^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 294.00 MiB. GPU 0 has a total capacity of 31.36 GiB of which 200.38 MiB is free. Including non-PyTorch memory, this process has 11.20 GiB memory in use. Process 45699 has 3.86 GiB memory in use. Process 45698 has 16.07 GiB memory in use. Of the allocated memory 9.50 GiB is allocated by PyTorch, and 1.03 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Process Process-2:
+Traceback (most recent call last):
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/converters.py", line 28, in _A2B
+    binary_tensor = binary_tensor.sum(dim=0)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/binary.py", line 354, in sum
+    x = x0 + x1
+        ~~~^~~~
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/binary.py", line 297, in add
+    return circuit.add(self, y)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/circuit.py", line 129, in add
+    carry, _ = __SPK_circuit(S, P)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/circuit.py", line 83, in __SPK_circuit
+    update = P0 & S1P1                  # S0 ^= P0 & S1, P0 = P0 & P1
+             ~~~^~~~~~
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/binary.py", line 256, in __and__
+    return result.__iand__(y)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/binary.py", line 241, in __iand__
+    self.share.set_(beaver.AND(self, y).share.data)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/beaver.py", line 186, in AND
+    eps_del = BinarySharedTensor.reveal_batch([x ^ a, y ^ b])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/binary.py", line 382, in reveal_batch
+    return comm.get().all_reduce(shares, op=op, batched=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/communicator/communicator.py", line 221, in logging_wrapper
+    result = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/communicator/distributed_communicator.py", line 203, in all_reduce
+    req.wait()
+RuntimeError: [/pytorch/third_party/gloo/gloo/transport/tcp/pair.cc:544] Connection closed by peer [127.0.0.1]:14746
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/root/miniconda3/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/context.py", line 30, in _launch
+    return_value = func(*func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/stage2/t12_rl_secure.py", line 109, in worker
+    grads = ops.loss_grad(h0p.cuda(), lens, pos, th, ysec)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/gpu_crypten_bp.py", line 115, in loss_grad
+    gz_out, gp = self.gelu_save(mm(hmid, w('ff1')) + w('ff1b'))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/gpu_crypten_bp2.py", line 28, in gelu_save
+    return super().gelu_save(z)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/gpu_crypten_bp.py", line 25, in gelu_save
+    g = cmp_lt_batch(s, [0.0, 12.0, -12.0])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/gpu_crypten_v2.py", line 52, in cmp_lt_batch
+    return _gate(crypten.stack([x - float(t) for t in thresholds]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/gpu_crypten_v2.py", line 47, in _gate
+    return (x < 0).to(ARITH)
+            ^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/common/functions/logic.py", line 50, in lt
+    return (self - y)._ltz()
+           ^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/mpc.py", line 238, in _ltz
+    result = self._to_ptype(Ptype.binary)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/mpc.py", line 149, in _to_ptype
+    retval._tensor = convert(self._tensor, ptype, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/converters.py", line 78, in convert
+    return _A2B(tensor)
+           ^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/converters.py", line 35, in _A2B
+    binary_tensor = binary_share if i == 0 else binary_tensor + binary_share
+                                                ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/binary.py", line 297, in add
+    return circuit.add(self, y)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/circuit.py", line 127, in add
+    S = x & y
+        ~~^~~
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/binary.py", line 256, in __and__
+    return result.__iand__(y)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/binary.py", line 241, in __iand__
+    self.share.set_(beaver.AND(self, y).share.data)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/beaver.py", line 186, in AND
+    eps_del = BinarySharedTensor.reveal_batch([x ^ a, y ^ b])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/binary.py", line 382, in reveal_batch
+    return comm.get().all_reduce(shares, op=op, batched=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/communicator/communicator.py", line 221, in logging_wrapper
+    result = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/communicator/distributed_communicator.py", line 203, in all_reduce
+    req.wait()
+RuntimeError: [/pytorch/third_party/gloo/gloo/transport/tcp/pair.cc:544] Connection closed by peer [127.0.0.1]:14746
+ERROR:root:One of the parties failed. Check past logs
+Traceback (most recent call last):
+  File "/workspace/veiltune/stage2/t12_rl_secure.py", line 125, in <module>
+    res = {r['rank']: r['out'] for r in worker(a.mode, a.batches) if r}
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable

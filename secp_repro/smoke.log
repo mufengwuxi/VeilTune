@@ -1,0 +1,15 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]
+Loading weights:  30%|██▉       | 118/394 [00:00<00:00, 761.01it/s]
+Loading weights:  50%|█████     | 198/394 [00:00<00:00, 773.19it/s]
+Loading weights:  72%|███████▏  | 282/394 [00:00<00:00, 799.51it/s]
+Loading weights:  99%|█████████▊| 389/394 [00:00<00:00, 898.41it/s]
+Loading weights: 100%|██████████| 394/394 [00:00<00:00, 860.55it/s]
+/workspace/veiltune/secp_repro.py:52: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  std_hat = float(emb.float().std())
+{"gen": 0, "evals": 0, "dev_acc": 0.7421875, "dev_f1": 0.7335856196783349, "dev_loss": 0.5311181545257568, "test_acc": 0.7442660331726074, "test_f1": 0.7286798018146987}
+{"gen": 5, "evals": 100, "dev_acc": 0.77734375, "dev_f1": 0.7744493392070485, "dev_loss": 0.47343987226486206, "test_acc": 0.7614678740501404, "test_f1": 0.7553403296732943, "train_loss_best": 0.39363574981689453, "sec": 1.5}
+{"gen": 10, "evals": 200, "dev_acc": 0.779296875, "dev_f1": 0.7778724809281933, "dev_loss": 0.46322381496429443, "test_acc": 0.7740825414657593, "test_f1": 0.7699408727793812, "train_loss_best": 0.3398452401161194, "sec": 3.6}
+DONE

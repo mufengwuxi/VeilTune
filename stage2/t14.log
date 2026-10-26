@@ -1,0 +1,28 @@
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/provider/ttp_provider.py:40: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c_size = getattr(torch, op)(a, b, *args, **kwargs).size()
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/provider/ttp_provider.py:317: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c = getattr(torch, op)(a, b, *args, **kwargs)
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/beaver.py:82: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c._tensor += getattr(torch, op)(epsilon, b._tensor, *args, **kwargs)
+T14 gelu_bp {"max_err": 0.010986328125, "max_err_grad": 0.0009522112162561047, "rounds": 28, "bytes_per_elt": 2096.0} err0 {'max_err': 0.010986328125, 'max_err_grad': 0.0009522112162561047}
+T14 gelu_bp2 {"max_err": 0.00028236716199436795, "max_err_grad": 0.0012198666750475433, "rounds": 17, "bytes_per_elt": 1376.0} err0 {'max_err': 0.00028236716199436795, 'max_err_grad': 0.0012198666750475433}
+T14 max_tree {"err": 1.4781951904296875e-05, "rounds": 54, "bytes_per_row": 22272.0} err0 {'err': 1.4781951904296875e-05}
+T14 max_crypten {"err": 1.4781951904296875e-05, "rounds": 69, "bytes_per_row": 75280.0} err0 {'err': 1.4781951904296875e-05}
+T14 softmax_bp {"max_err": 0.00024734961742967077, "rounds": 102, "bytes_per_row": 116160.0} err0 {'max_err': 0.00024734961742967077}
+T14 softmax_bp2 {"max_err": 0.00023156437315108302, "rounds": 87, "bytes_per_row": 63152.0} err0 {'max_err': 0.00023156437315108302}

@@ -1,0 +1,59 @@
+{
+ "rank": 0,
+ "per_rank": {
+  "b1_L10": {
+   "step_s": 6.496222496032715,
+   "dealer_s": 1.147973601706326,
+   "online_net_s": 5.348248894326389,
+   "tuples": {
+    "generate_additive_triple": 876,
+    "generate_binary_triple": 1256,
+    "B2A_rng": 188,
+    "square": 72
+   },
+   "comm_rounds": 2394,
+   "comm_bytes": 83326464
+  },
+  "b64": {
+   "step_s": 18.534343719482422,
+   "dealer_s": 1.777735154144466,
+   "online_net_s": 16.756608565337956,
+   "tuples": {
+    "generate_additive_triple": 888,
+    "generate_binary_triple": 1284,
+    "B2A_rng": 192,
+    "square": 72
+   },
+   "comm_rounds": 2438,
+   "comm_bytes": 21535858688
+  }
+ },
+ "timing": {
+  "b1_L10": {
+   "batch": 1,
+   "seq": 10,
+   "max_valid": 10,
+   "times_s": [
+    6.341336727142334,
+    6.705063819885254,
+    6.472085475921631
+   ],
+   "step_s_median": 6.472085475921631,
+   "warmup_s": 6.777547597885132
+  },
+  "b64": {
+   "batch": 64,
+   "seq": 38,
+   "max_valid": 38,
+   "times_s": [
+    19.323771953582764,
+    18.52721095085144,
+    18.347238063812256
+   ],
+   "step_s_median": 18.52721095085144,
+   "warmup_s": 19.777873992919922
+  }
+ },
+ "comm_total_bytes_both_ranks": 43238370304,
+ "comm_total_MB": 43238.37
+}

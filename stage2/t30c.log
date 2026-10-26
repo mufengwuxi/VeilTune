@@ -1,0 +1,28 @@
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+T30C K=64 |A|=0.1 matmul bad 0 exp 0.000 | mul bad 0 exp 0.000
+T30C K=64 |A|=0.4 matmul bad 0 exp 0.001 | mul bad 0 exp 0.000
+T30C K=64 |A|=1.6 matmul bad 20 exp 0.004 | mul bad 0 exp 0.000
+T30C K=256 |A|=0.1 matmul bad 0 exp 0.000 | mul bad 0 exp 0.000
+T30C K=256 |A|=0.4 matmul bad 0 exp 0.002 | mul bad 0 exp 0.000
+T30C K=256 |A|=1.6 matmul bad 0 exp 0.007 | mul bad 0 exp 0.001
+T30C K=1024 |A|=0.1 matmul bad 0 exp 0.001 | mul bad 0 exp 0.000
+T30C K=1024 |A|=0.4 matmul bad 40 exp 0.004 | mul bad 0 exp 0.001
+T30C K=1024 |A|=1.6 matmul bad 20 exp 0.014 | mul bad 0 exp 0.002
+T30C K=4096 |A|=0.1 matmul bad 0 exp 0.002 | mul bad 0 exp 0.001
+T30C K=4096 |A|=0.4 matmul bad 40 exp 0.007 | mul bad 0 exp 0.002
+T30C K=4096 |A|=1.6 matmul bad 180 exp 0.029 | mul bad 0 exp 0.010

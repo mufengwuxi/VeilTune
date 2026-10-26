@@ -1,0 +1,181 @@
+### bwextra=0 seq=16 rep=1
+EXIT p0=0 p1=0
+Total time=57414 us
+Key size=148353024 B (0.138165 GB)
+Total time=301192 us
+Total Comm=7583570 B (0.007063 GB)
+Total time=59362 us
+Key size=148353024 B (0.138165 GB)
+Total time=301410 us
+Total Comm=7583570 B (0.007063 GB)
+### bwextra=0 seq=16 rep=2
+EXIT p0=0 p1=0
+Total time=59858 us
+Key size=148353024 B (0.138165 GB)
+Total time=337164 us
+Total Comm=7583570 B (0.007063 GB)
+Total time=59126 us
+Key size=148353024 B (0.138165 GB)
+Total time=337438 us
+Total Comm=7583570 B (0.007063 GB)
+### bwextra=0 seq=16 rep=3
+EXIT p0=0 p1=0
+Total time=58140 us
+Key size=148353024 B (0.138165 GB)
+Total time=302788 us
+Total Comm=7583570 B (0.007063 GB)
+Total time=60663 us
+Key size=148353024 B (0.138165 GB)
+Total time=302730 us
+Total Comm=7583570 B (0.007063 GB)
+### bwextra=0 seq=32 rep=1
+EXIT p0=0 p1=0
+Total time=63298 us
+Key size=285806592 B (0.266178 GB)
+Total time=288160 us
+Total Comm=16092402 B (0.014987 GB)
+Total time=64455 us
+Key size=285806592 B (0.266178 GB)
+Total time=288277 us
+Total Comm=16092402 B (0.014987 GB)
+### bwextra=0 seq=32 rep=2
+EXIT p0=0 p1=0
+Total time=62786 us
+Key size=285806592 B (0.266178 GB)
+Total time=287236 us
+Total Comm=16092402 B (0.014987 GB)
+Total time=62369 us
+Key size=285806592 B (0.266178 GB)
+Total time=287305 us
+Total Comm=16092402 B (0.014987 GB)
+### bwextra=0 seq=32 rep=3
+EXIT p0=0 p1=0
+Total time=71155 us
+Key size=285806592 B (0.266178 GB)
+Total time=286253 us
+Total Comm=16092402 B (0.014987 GB)
+Total time=61545 us
+Key size=285806592 B (0.266178 GB)
+Total time=286135 us
+Total Comm=16092402 B (0.014987 GB)
+### bwextra=8 seq=16 rep=1
+EXIT p0=0 p1=0
+Total time=60463 us
+Key size=179552256 B (0.167221 GB)
+Total time=310656 us
+Total Comm=9321554 B (0.008681 GB)
+Total time=59801 us
+Key size=179552256 B (0.167221 GB)
+Total time=310725 us
+Total Comm=9321554 B (0.008681 GB)
+### bwextra=8 seq=16 rep=2
+EXIT p0=0 p1=0
+Total time=60377 us
+Key size=179552256 B (0.167221 GB)
+Total time=312471 us
+Total Comm=9321554 B (0.008681 GB)
+Total time=60821 us
+Key size=179552256 B (0.167221 GB)
+Total time=312279 us
+Total Comm=9321554 B (0.008681 GB)
+### bwextra=8 seq=16 rep=3
+EXIT p0=0 p1=0
+Total time=60112 us
+Key size=179552256 B (0.167221 GB)
+Total time=303607 us
+Total Comm=9321554 B (0.008681 GB)
+Total time=59812 us
+Key size=179552256 B (0.167221 GB)
+Total time=303439 us
+Total Comm=9321554 B (0.008681 GB)
+### bwextra=8 seq=32 rep=1
+EXIT p0=0 p1=0
+Total time=65762 us
+Key size=351375360 B (0.327244 GB)
+Total time=295964 us
+Total Comm=19764978 B (0.018408 GB)
+Total time=67682 us
+Key size=351375360 B (0.327244 GB)
+Total time=295844 us
+Total Comm=19764978 B (0.018408 GB)
+### bwextra=8 seq=32 rep=2
+EXIT p0=0 p1=0
+Total time=66519 us
+Key size=351375360 B (0.327244 GB)
+Total time=307660 us
+Total Comm=19764978 B (0.018408 GB)
+Total time=65767 us
+Key size=351375360 B (0.327244 GB)
+Total time=307731 us
+Total Comm=19764978 B (0.018408 GB)
+### bwextra=8 seq=32 rep=3
+EXIT p0=0 p1=0
+Total time=66310 us
+Key size=351375360 B (0.327244 GB)
+Total time=293680 us
+Total Comm=19764978 B (0.018408 GB)
+Total time=65469 us
+Key size=351375360 B (0.327244 GB)
+Total time=293744 us
+Total Comm=19764978 B (0.018408 GB)
+### bwextra=13 seq=16 rep=1
+EXIT p0=0 p1=0
+Total time=61668 us
+Key size=199053312 B (0.185383 GB)
+Total time=338973 us
+Total Comm=10407698 B (0.009693 GB)
+Total time=61092 us
+Key size=199053312 B (0.185383 GB)
+Total time=338865 us
+Total Comm=10407698 B (0.009693 GB)
+### bwextra=13 seq=16 rep=2
+EXIT p0=0 p1=0
+Total time=59931 us
+Key size=199053312 B (0.185383 GB)
+Total time=319520 us
+Total Comm=10407698 B (0.009693 GB)
+Total time=108823 us
+Key size=199053312 B (0.185383 GB)
+Total time=319474 us
+Total Comm=10407698 B (0.009693 GB)
+### bwextra=13 seq=16 rep=3
+EXIT p0=0 p1=0
+Total time=62382 us
+Key size=199053312 B (0.185383 GB)
+Total time=303122 us
+Total Comm=10407698 B (0.009693 GB)
+Total time=61400 us
+Key size=199053312 B (0.185383 GB)
+Total time=303060 us
+Total Comm=10407698 B (0.009693 GB)
+### bwextra=13 seq=32 rep=1
+EXIT p0=0 p1=0
+Total time=68210 us
+Key size=392355840 B (0.365410 GB)
+Total time=295122 us
+Total Comm=22060146 B (0.020545 GB)
+Total time=68346 us
+Key size=392355840 B (0.365410 GB)
+Total time=294949 us
+Total Comm=22060146 B (0.020545 GB)
+### bwextra=13 seq=32 rep=2
+EXIT p0=0 p1=0
+Total time=87709 us
+Key size=392355840 B (0.365410 GB)
+Total time=336505 us
+Total Comm=22060146 B (0.020545 GB)
+Total time=68276 us
+Key size=392355840 B (0.365410 GB)
+Total time=336376 us
+Total Comm=22060146 B (0.020545 GB)
+### bwextra=13 seq=32 rep=3
+EXIT p0=0 p1=0
+Total time=68501 us
+Key size=392355840 B (0.365410 GB)
+Total time=296926 us
+Total Comm=22060146 B (0.020545 GB)
+Total time=67586 us
+Key size=392355840 B (0.365410 GB)
+Total time=296798 us
+Total Comm=22060146 B (0.020545 GB)
+BENCHBW_DONE

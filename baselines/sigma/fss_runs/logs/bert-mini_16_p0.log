@@ -1,0 +1,6 @@
+Model=bert-mini
+scale=12 bw=50
+reserved memory: 10770972672 18446744073709551615
+waiting for connection from client...connected
+Allocating 5368709120 bytes of memory for comm bufs
+0, 0

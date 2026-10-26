@@ -1,0 +1,70 @@
+{
+ "0": {
+  "gelu_bp": {
+   "max_err": 0.010986328125,
+   "max_err_grad": 0.0009522112162561047,
+   "rounds": 112,
+   "bytes_per_elt": 2664.280277374617
+  },
+  "gelu_bp2": {
+   "max_err": 0.00028236716199436795,
+   "max_err_grad": 0.0012198666750475433,
+   "rounds": 68,
+   "bytes_per_elt": 1728.1735203999356
+  },
+  "max_tree": {
+   "err": 1.4781951904296875e-05,
+   "rounds": 216,
+   "bytes_per_row": 28098.428571428572
+  },
+  "max_crypten": {
+   "err": 1.4781951904296875e-05,
+   "rounds": 276,
+   "bytes_per_row": 95068.57142857143
+  },
+  "softmax_bp": {
+   "max_err": 0.00024734961742967077,
+   "rounds": 408,
+   "bytes_per_row": 147404.85714285713
+  },
+  "softmax_bp2": {
+   "max_err": 0.00023156437315108302,
+   "rounds": 348,
+   "bytes_per_row": 80434.71428571429
+  }
+ },
+ "1": {
+  "gelu_bp": {
+   "max_err": 0.010986328125,
+   "max_err_grad": 0.0009522112162561047,
+   "rounds": 28,
+   "bytes_per_elt": 2096.0
+  },
+  "gelu_bp2": {
+   "max_err": 0.00028236716199436795,
+   "max_err_grad": 0.0012198666750475433,
+   "rounds": 17,
+   "bytes_per_elt": 1376.0
+  },
+  "max_tree": {
+   "err": 1.4781951904296875e-05,
+   "rounds": 54,
+   "bytes_per_row": 22272.0
+  },
+  "max_crypten": {
+   "err": 1.4781951904296875e-05,
+   "rounds": 69,
+   "bytes_per_row": 75280.0
+  },
+  "softmax_bp": {
+   "max_err": 0.00024734961742967077,
+   "rounds": 102,
+   "bytes_per_row": 116160.0
+  },
+  "softmax_bp2": {
+   "max_err": 0.00023156437315108302,
+   "rounds": 87,
+   "bytes_per_row": 63152.0
+  }
+ }
+}

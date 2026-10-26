@@ -1,0 +1,1 @@
+{"scenario": "s2", "steps": 5, "lr": 0.0003, "train": "cma", "zo_eps": 0.001, "cma_dim": 500, "cma_pop": 20, "cma_sigma": 1.0, "cma_scale": 0.1, "Ks": [1], "reveal": "logits", "public": 512, "attack_iters": 10, "seed": 42}

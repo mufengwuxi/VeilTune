@@ -1,0 +1,392 @@
+[
+ {
+  "rank": 0,
+  "out": {
+   "b1_L10": {
+    "B": 1,
+    "T": 10,
+    "step_s": 12.942209511063993,
+    "total_rounds": 9570,
+    "total_bytes": 105331728.0,
+    "rows": [
+     {
+      "ctx": "exp_neg",
+      "prim": "cmp",
+      "rounds": 256,
+      "bytes": 17960768.0
+     },
+     {
+      "ctx": "exp_neg",
+      "prim": "mul",
+      "rounds": 416,
+      "bytes": 17178720.0
+     },
+     {
+      "ctx": "gelu",
+      "prim": "cmp",
+      "rounds": 256,
+      "bytes": 34554688.0
+     },
+     {
+      "ctx": "gelu",
+      "prim": "mul",
+      "rounds": 192,
+      "bytes": 15249408.0
+     },
+     {
+      "ctx": "inv_1p",
+      "prim": "mul",
+      "rounds": 128,
+      "bytes": 10166272.0
+     },
+     {
+      "ctx": "linear",
+      "prim": "matmul",
+      "rounds": 288,
+      "bytes": 3946368.0
+     },
+     {
+      "ctx": "linear",
+      "prim": "reveal",
+      "rounds": 2,
+      "bytes": 4096.0
+     },
+     {
+      "ctx": "ln",
+      "prim": "mul",
+      "rounds": 160,
+      "bytes": 2425760.0
+     },
+     {
+      "ctx": "rsqrt_newton",
+      "prim": "cmp",
+      "rounds": 4352,
+      "bytes": 866048.0
+     },
+     {
+      "ctx": "rsqrt_newton",
+      "prim": "mul",
+      "rounds": 1952,
+      "bytes": 276208.0
+     },
+     {
+      "ctx": "softmax",
+      "prim": "max",
+      "rounds": 912,
+      "bytes": 2348192.0
+     },
+     {
+      "ctx": "softmax",
+      "prim": "mul",
+      "rounds": 48,
+      "bytes": 134112.0
+     },
+     {
+      "ctx": "softmax",
+      "prim": "recip",
+      "rounds": 608,
+      "bytes": 221088.0
+     }
+    ],
+    "ctx_time_excl": {
+     "exp_neg": 0.9420076264068484,
+     "softmax": 1.8743527084589005,
+     "rsqrt_newton": 8.057210695929825,
+     "ln": 0.26643380895256996,
+     "gelu": 0.5976166063919663,
+     "inv_1p": 0.16795106325298548
+    }
+   },
+   "b64": {
+    "B": 64,
+    "T": 38,
+    "step_s": 26.043417597189546,
+    "total_rounds": 9746,
+    "total_bytes": 27123950496.0,
+    "rows": [
+     {
+      "ctx": "exp_neg",
+      "prim": "cmp",
+      "rounds": 256,
+      "bytes": 4708533312.0
+     },
+     {
+      "ctx": "exp_neg",
+      "prim": "mul",
+      "rounds": 416,
+      "bytes": 4500814240.0
+     },
+     {
+      "ctx": "gelu",
+      "prim": "cmp",
+      "rounds": 256,
+      "bytes": 8199881536.0
+     },
+     {
+      "ctx": "gelu",
+      "prim": "mul",
+      "rounds": 192,
+      "bytes": 3617599488.0
+     },
+     {
+      "ctx": "inv_1p",
+      "prim": "mul",
+      "rounds": 128,
+      "bytes": 2411732992.0
+     },
+     {
+      "ctx": "linear",
+      "prim": "matmul",
+      "rounds": 288,
+      "bytes": 820304064.0
+     },
+     {
+      "ctx": "linear",
+      "prim": "reveal",
+      "rounds": 2,
+      "bytes": 262144.0
+     },
+     {
+      "ctx": "ln",
+      "prim": "mul",
+      "rounds": 160,
+      "bytes": 573501440.0
+     },
+     {
+      "ctx": "rsqrt_newton",
+      "prim": "cmp",
+      "rounds": 4352,
+      "bytes": 136423232.0
+     },
+     {
+      "ctx": "rsqrt_newton",
+      "prim": "mul",
+      "rounds": 1952,
+      "bytes": 36041728.0
+     },
+     {
+      "ctx": "softmax",
+      "prim": "max",
+      "rounds": 1088,
+      "bytes": 1959130048.0
+     },
+     {
+      "ctx": "softmax",
+      "prim": "mul",
+      "rounds": 48,
+      "bytes": 116821088.0
+     },
+     {
+      "ctx": "softmax",
+      "prim": "recip",
+      "rounds": 608,
+      "bytes": 42905184.0
+     }
+    ],
+    "ctx_time_excl": {
+     "exp_neg": 4.593036595731974,
+     "softmax": 3.1151926713064313,
+     "rsqrt_newton": 8.929868144914508,
+     "ln": 0.5213760491460562,
+     "gelu": 5.266016895882785,
+     "inv_1p": 1.055352594703436
+    }
+   }
+  }
+ },
+ {
+  "rank": 1,
+  "out": {
+   "b1_L10": {
+    "B": 1,
+    "T": 10,
+    "step_s": 12.942034895531833,
+    "total_rounds": 2394,
+    "total_bytes": 83322368,
+    "rows": [
+     {
+      "ctx": "exp_neg",
+      "prim": "cmp",
+      "rounds": 64,
+      "bytes": 14249088
+     },
+     {
+      "ctx": "exp_neg",
+      "prim": "mul",
+      "rounds": 104,
+      "bytes": 13721344
+     },
+     {
+      "ctx": "gelu",
+      "prim": "cmp",
+      "rounds": 64,
+      "bytes": 27426816
+     },
+     {
+      "ctx": "gelu",
+      "prim": "mul",
+      "rounds": 48,
+      "bytes": 12189696
+     },
+     {
+      "ctx": "inv_1p",
+      "prim": "mul",
+      "rounds": 32,
+      "bytes": 8126464
+     },
+     {
+      "ctx": "linear",
+      "prim": "matmul",
+      "rounds": 72,
+      "bytes": 3208320
+     },
+     {
+      "ctx": "linear",
+      "prim": "reveal",
+      "rounds": 2,
+      "bytes": 4096
+     },
+     {
+      "ctx": "ln",
+      "prim": "mul",
+      "rounds": 40,
+      "bytes": 1780640
+     },
+     {
+      "ctx": "rsqrt_newton",
+      "prim": "cmp",
+      "rounds": 1088,
+      "bytes": 455328
+     },
+     {
+      "ctx": "rsqrt_newton",
+      "prim": "mul",
+      "rounds": 488,
+      "bytes": 121024
+     },
+     {
+      "ctx": "softmax",
+      "prim": "max",
+      "rounds": 228,
+      "bytes": 1801472
+     },
+     {
+      "ctx": "softmax",
+      "prim": "mul",
+      "rounds": 12,
+      "bytes": 101184
+     },
+     {
+      "ctx": "softmax",
+      "prim": "recip",
+      "rounds": 152,
+      "bytes": 136896
+     }
+    ],
+    "ctx_time_excl": {
+     "exp_neg": 0.9426488485187292,
+     "softmax": 1.8757045594975352,
+     "rsqrt_newton": 8.056237103417516,
+     "ln": 0.2580969762057066,
+     "gelu": 0.5921532139182091,
+     "inv_1p": 0.16864194348454475
+    }
+   },
+   "b64": {
+    "B": 64,
+    "T": 38,
+    "step_s": 26.04351169243455,
+    "total_rounds": 2438,
+    "total_bytes": 21535596544,
+    "rows": [
+     {
+      "ctx": "exp_neg",
+      "prim": "cmp",
+      "rounds": 64,
+      "bytes": 3739115520
+     },
+     {
+      "ctx": "exp_neg",
+      "prim": "mul",
+      "rounds": 104,
+      "bytes": 3600629760
+     },
+     {
+      "ctx": "gelu",
+      "prim": "cmp",
+      "rounds": 64,
+      "bytes": 6511656960
+     },
+     {
+      "ctx": "gelu",
+      "prim": "mul",
+      "rounds": 48,
+      "bytes": 2894069760
+     },
+     {
+      "ctx": "inv_1p",
+      "prim": "mul",
+      "rounds": 32,
+      "bytes": 1929379840
+     },
+     {
+      "ctx": "linear",
+      "prim": "matmul",
+      "rounds": 72,
+      "bytes": 626810880
+     },
+     {
+      "ctx": "linear",
+      "prim": "reveal",
+      "rounds": 2,
+      "bytes": 262144
+     },
+     {
+      "ctx": "ln",
+      "prim": "mul",
+      "rounds": 40,
+      "bytes": 422758400
+     },
+     {
+      "ctx": "rsqrt_newton",
+      "prim": "cmp",
+      "rounds": 1088,
+      "bytes": 108103680
+     },
+     {
+      "ctx": "rsqrt_newton",
+      "prim": "mul",
+      "rounds": 488,
+      "bytes": 28733440
+     },
+     {
+      "ctx": "softmax",
+      "prim": "max",
+      "rounds": 272,
+      "bytes": 1551605760
+     },
+     {
+      "ctx": "softmax",
+      "prim": "mul",
+      "rounds": 12,
+      "bytes": 89968640
+     },
+     {
+      "ctx": "softmax",
+      "prim": "recip",
+      "rounds": 152,
+      "bytes": 32501760
+     }
+    ],
+    "ctx_time_excl": {
+     "exp_neg": 4.588015500456095,
+     "softmax": 3.1212659515440464,
+     "rsqrt_newton": 8.929776193574071,
+     "ln": 0.5133099341765046,
+     "gelu": 5.267262657172978,
+     "inv_1p": 1.0560212600976229
+    }
+   }
+  }
+ }
+]

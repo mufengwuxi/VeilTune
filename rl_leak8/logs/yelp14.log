@@ -1,0 +1,6 @@
+{"stage": "protocol", "steps": 1000, "test_thetaT": 0.9225}
+{"stage": "baseline_local", "test": 0.8995, "agree_thetaT": 0.909}
+{"stage": "attack_fit_logits", "K": 1, "test": 0.927, "agree_thetaT": 0.9365}
+{"stage": "attack_fit_logits+y", "K": 1, "test": 0.9265, "agree_thetaT": 0.933}
+{"stage": "attack_fit_logits", "K": 100, "test": 0.931, "agree_thetaT": 0.9365}
+{"stage": "attack_fit_logits+y", "K": 100, "test": 0.93, "agree_thetaT": 0.9355}

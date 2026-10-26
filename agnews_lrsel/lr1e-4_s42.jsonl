@@ -1,0 +1,6 @@
+{"step": 25, "mode": "noskip", "dev_acc": 0.8203125, "test_acc": 0.83}
+{"step": 50, "mode": "noskip", "dev_acc": 0.849609375, "test_acc": 0.851}
+{"step": 75, "mode": "noskip", "dev_acc": 0.8515625, "test_acc": 0.855}
+{"step": 100, "mode": "noskip", "dev_acc": 0.837890625, "test_acc": 0.858}
+{"step": 125, "mode": "noskip", "dev_acc": 0.828125, "test_acc": 0.85}
+{"step": 150, "mode": "noskip", "dev_acc": 0.826171875, "test_acc": 0.8545}

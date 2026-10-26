@@ -1,0 +1,69 @@
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/76 [00:00<?, ?it/s]Loading weights: 100%|██████████| 76/76 [00:00<00:00, 41756.24it/s]
+[transformers] [1mBertForMaskedLM LOAD REPORT[0m from: google/bert_uncased_L-4_H-256_A-4
+Key                         | Status     |  | 
+----------------------------+------------+--+-
+cls.seq_relationship.bias   | UNEXPECTED |  | 
+bert.pooler.dense.weight    | UNEXPECTED |  | 
+cls.seq_relationship.weight | UNEXPECTED |  | 
+bert.pooler.dense.bias      | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/76 [00:00<?, ?it/s]Loading weights: 100%|██████████| 76/76 [00:00<00:00, 42042.61it/s]
+[transformers] [1mBertForMaskedLM LOAD REPORT[0m from: google/bert_uncased_L-4_H-256_A-4
+Key                         | Status     |  | 
+----------------------------+------------+--+-
+cls.seq_relationship.bias   | UNEXPECTED |  | 
+bert.pooler.dense.weight    | UNEXPECTED |  | 
+cls.seq_relationship.weight | UNEXPECTED |  | 
+bert.pooler.dense.bias      | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/arithmetic.py:372: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  result.share = getattr(torch, op)(result.share, y, *args, **kwargs)
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/arithmetic.py:372: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  result.share = getattr(torch, op)(result.share, y, *args, **kwargs)
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/provider/ttp_provider.py:317: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c = getattr(torch, op)(a, b, *args, **kwargs)
+Loading weights:   0%|          | 0/76 [00:00<?, ?it/s]Loading weights: 100%|██████████| 76/76 [00:00<00:00, 26412.06it/s]
+[transformers] [1mBertForMaskedLM LOAD REPORT[0m from: google/bert_uncased_L-4_H-256_A-4
+Key                         | Status     |  | 
+----------------------------+------------+--+-
+cls.seq_relationship.bias   | UNEXPECTED |  | 
+bert.pooler.dense.weight    | UNEXPECTED |  | 
+cls.seq_relationship.weight | UNEXPECTED |  | 
+bert.pooler.dense.bias      | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/76 [00:00<?, ?it/s]Loading weights: 100%|██████████| 76/76 [00:00<00:00, 25924.46it/s]
+[transformers] [1mBertForMaskedLM LOAD REPORT[0m from: google/bert_uncased_L-4_H-256_A-4
+Key                         | Status     |  | 
+----------------------------+------------+--+-
+cls.seq_relationship.bias   | UNEXPECTED |  | 
+bert.pooler.dense.weight    | UNEXPECTED |  | 
+cls.seq_relationship.weight | UNEXPECTED |  | 
+bert.pooler.dense.bias      | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+DONE {"timing": {"b1_L10": {"provider": "TTP", "batch": 1, "seq": 10, "max_valid": 10, "times_s": [14.115217685699463, 13.897841930389404, 12.908467054367065], "step_s_median": 13.897841930389404, "warmup_s": 14.20668649673462}, "b64": {"provider": "TTP", "batch": 64, "seq": 38, "max_valid": 38, "times_s": [27.7053005695343, 26.362805128097534, 27.34641194343567], "step_s_median": 27.34641194343567, "warmup_s": 28.289231300354004}}, "per_label": {"b1_L10": {"rounds_rank0": 9570, "rounds_rank1": 2394, "p01_rounds": 2394, "p01_logged_bytes_both": 166644736.0, "p01_wire_bytes": 83322368.0, "ttp_requests": 2392, "ttp_request_s": 4.229134510271251, "ttp_logged_bytes": 22009360.0, "dealer_s_rank0": 4.763825283385813, "dealer_s_rank1": 0.8344076471403241, "step_s_instrumented": 12.951354026794434}, "b64": {"rounds_rank0": 9746, "rounds_rank1": 2438, "p01_rounds": 2438, "p01_logged_bytes_both": 43071193088.0, "p01_wire_bytes": 21535596544.0, "ttp_requests": 2436, "ttp_request_s": 7.107361671514809, "ttp_logged_bytes": 5588353952.0, "dealer_s_rank0": 7.7830592673271894, "dealer_s_rank1": 1.0586847867816687, "step_s_instrumented": 26.921367406845093}}}

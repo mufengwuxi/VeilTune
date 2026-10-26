@@ -1,0 +1,446 @@
+{
+ "0": {
+  "rank": 0,
+  "total_s": 33.641928032040596,
+  "rounds": 4832,
+  "bytes": 33012881384.0,
+  "N_real": 628,
+  "T": 49,
+  "rows": [
+   {
+    "phase": "fwd",
+    "outer": "gelu_save",
+    "inner": "gelu_save",
+    "prim": "mul",
+    "rounds": 324,
+    "bytes": 11628728432.0,
+    "calls": 324
+   },
+   {
+    "phase": "fwd",
+    "outer": "gelu_save",
+    "inner": "gelu_save",
+    "prim": "other",
+    "rounds": 252,
+    "bytes": 8866905280.0,
+    "calls": 252
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "exp_free",
+    "prim": "mul",
+    "rounds": 320,
+    "bytes": 3866383168.0,
+    "calls": 320
+   },
+   {
+    "phase": "bwd",
+    "outer": "linear",
+    "inner": "linear",
+    "prim": "matmul",
+    "rounds": 376,
+    "bytes": 2267902352.0,
+    "calls": 376
+   },
+   {
+    "phase": "fwd",
+    "outer": "linear",
+    "inner": "linear",
+    "prim": "matmul",
+    "rounds": 192,
+    "bytes": 1124009984.0,
+    "calls": 192
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "max_tree",
+    "prim": "other",
+    "rounds": 1152,
+    "bytes": 963843456.0,
+    "calls": 1152
+   },
+   {
+    "phase": "bwd",
+    "outer": "ln_bwd",
+    "inner": "ln_bwd",
+    "prim": "mul",
+    "rounds": 204,
+    "bytes": 801212520.0,
+    "calls": 204
+   },
+   {
+    "phase": "bwd",
+    "outer": "linear",
+    "inner": "linear",
+    "prim": "mul",
+    "rounds": 36,
+    "bytes": 726796472.0,
+    "calls": 36
+   },
+   {
+    "phase": "bwd",
+    "outer": "softmax_bwd",
+    "inner": "softmax_bwd",
+    "prim": "mul",
+    "rounds": 64,
+    "bytes": 690425984.0,
+    "calls": 64
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "inner": "ln_save",
+    "prim": "mul",
+    "rounds": 136,
+    "bytes": 582634608.0,
+    "calls": 136
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "recip_den",
+    "prim": "cmp",
+    "rounds": 256,
+    "bytes": 574900032.0,
+    "calls": 256
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "max_tree",
+    "prim": "mul",
+    "rounds": 192,
+    "bytes": 338178432.0,
+    "calls": 192
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "softmax_save",
+    "prim": "mul",
+    "rounds": 32,
+    "bytes": 209946688.0,
+    "calls": 32
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "inner": "rsqrt_newton",
+    "prim": "cmp",
+    "rounds": 544,
+    "bytes": 198274536.0,
+    "calls": 544
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "recip_den",
+    "prim": "mul",
+    "rounds": 256,
+    "bytes": 140919424.0,
+    "calls": 256
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "inner": "rsqrt_newton",
+    "prim": "mul",
+    "rounds": 408,
+    "bytes": 31738224.0,
+    "calls": 408
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "_sigmoid",
+    "prim": "cmp",
+    "rounds": 32,
+    "bytes": 54312.0,
+    "calls": 32
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "exp_neg",
+    "prim": "mul",
+    "rounds": 32,
+    "bytes": 15256.0,
+    "calls": 32
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "inv_1p",
+    "prim": "mul",
+    "rounds": 16,
+    "bytes": 9184.0,
+    "calls": 16
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "_sigmoid",
+    "prim": "mul",
+    "rounds": 8,
+    "bytes": 3040.0,
+    "calls": 8
+   }
+  ],
+  "time": [
+   {
+    "phase": "fwd",
+    "outer": "gelu_save",
+    "s": 10.337281574029475
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "s": 6.904658992076293
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "s": 4.499010948115028
+   },
+   {
+    "phase": "bwd",
+    "outer": "ln_bwd",
+    "s": 0.6157078579999506
+   },
+   {
+    "phase": "bwd",
+    "outer": "softmax_bwd",
+    "s": 0.3717572760069743
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "s": 0.1265402069548145
+   }
+  ]
+ },
+ "1": {
+  "rank": 1,
+  "total_s": 33.581928402069025,
+  "rounds": 1208,
+  "bytes": 26100725760,
+  "N_real": 628,
+  "T": 49,
+  "rows": [
+   {
+    "phase": "fwd",
+    "outer": "gelu_save",
+    "inner": "gelu_save",
+    "prim": "mul",
+    "rounds": 81,
+    "bytes": 9302966272,
+    "calls": 81
+   },
+   {
+    "phase": "fwd",
+    "outer": "gelu_save",
+    "inner": "gelu_save",
+    "prim": "other",
+    "rounds": 63,
+    "bytes": 6977224704,
+    "calls": 63
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "exp_free",
+    "prim": "mul",
+    "rounds": 80,
+    "bytes": 3037855744,
+    "calls": 80
+   },
+   {
+    "phase": "bwd",
+    "outer": "linear",
+    "inner": "linear",
+    "prim": "matmul",
+    "rounds": 94,
+    "bytes": 1834645248,
+    "calls": 94
+   },
+   {
+    "phase": "fwd",
+    "outer": "linear",
+    "inner": "linear",
+    "prim": "matmul",
+    "rounds": 48,
+    "bytes": 887044864,
+    "calls": 48
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "max_tree",
+    "prim": "other",
+    "rounds": 288,
+    "bytes": 743964672,
+    "calls": 288
+   },
+   {
+    "phase": "bwd",
+    "outer": "ln_bwd",
+    "inner": "ln_bwd",
+    "prim": "mul",
+    "rounds": 51,
+    "bytes": 582768384,
+    "calls": 51
+   },
+   {
+    "phase": "bwd",
+    "outer": "linear",
+    "inner": "linear",
+    "prim": "mul",
+    "rounds": 9,
+    "bytes": 581435392,
+    "calls": 9
+   },
+   {
+    "phase": "bwd",
+    "outer": "softmax_bwd",
+    "inner": "softmax_bwd",
+    "prim": "mul",
+    "rounds": 16,
+    "bytes": 552337408,
+    "calls": 16
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "recip_den",
+    "prim": "cmp",
+    "rounds": 64,
+    "bytes": 456523776,
+    "calls": 64
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "inner": "ln_save",
+    "prim": "mul",
+    "rounds": 34,
+    "bytes": 437005184,
+    "calls": 34
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "max_tree",
+    "prim": "mul",
+    "rounds": 48,
+    "bytes": 270532608,
+    "calls": 48
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "inner": "rsqrt_newton",
+    "prim": "cmp",
+    "rounds": 136,
+    "bytes": 157424256,
+    "calls": 136
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "softmax_save",
+    "prim": "mul",
+    "rounds": 8,
+    "bytes": 140902400,
+    "calls": 8
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "recip_den",
+    "prim": "mul",
+    "rounds": 64,
+    "bytes": 112721920,
+    "calls": 64
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "inner": "rsqrt_newton",
+    "prim": "mul",
+    "rounds": 102,
+    "bytes": 25313024,
+    "calls": 102
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "_sigmoid",
+    "prim": "cmp",
+    "rounds": 8,
+    "bytes": 41472,
+    "calls": 8
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "exp_neg",
+    "prim": "mul",
+    "rounds": 8,
+    "bytes": 10240,
+    "calls": 8
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "inv_1p",
+    "prim": "mul",
+    "rounds": 4,
+    "bytes": 6144,
+    "calls": 4
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "_sigmoid",
+    "prim": "mul",
+    "rounds": 2,
+    "bytes": 2048,
+    "calls": 2
+   }
+  ],
+  "time": [
+   {
+    "phase": "fwd",
+    "outer": "gelu_save",
+    "s": 10.336808175779879
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "s": 6.91491040494293
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "s": 4.500401016091928
+   },
+   {
+    "phase": "bwd",
+    "outer": "ln_bwd",
+    "s": 0.6220378207508475
+   },
+   {
+    "phase": "bwd",
+    "outer": "softmax_bwd",
+    "s": 0.3787861600285396
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "s": 0.12621931091416627
+   }
+  ]
+ }
+}

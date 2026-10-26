@@ -1,0 +1,28 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 394/394 [00:00<00:00, 9668.65it/s]
+{"step": 0, "dev_acc": 0.771484375, "dev_loss": 0.48243507742881775, "test_acc": 0.7637614678899083}
+/workspace/veiltune/rl_plain.py:228: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  c = float(loss)
+{"step": 50, "dev_acc": 0.77734375, "dev_loss": 0.4620022028684616, "test_acc": 0.768348623853211, "mean_abs_c": 0.463156179189682, "sec": 2.6}
+{"step": 100, "dev_acc": 0.794921875, "dev_loss": 0.43777163326740265, "test_acc": 0.8107798165137615, "mean_abs_c": 0.34191220670938494, "sec": 6.1}
+{"step": 150, "dev_acc": 0.8046875, "dev_loss": 0.45911043882369995, "test_acc": 0.8268348623853211, "mean_abs_c": 0.27020018331706525, "sec": 9.3}
+{"step": 200, "dev_acc": 0.8203125, "dev_loss": 0.5365370810031891, "test_acc": 0.8256880733944955, "mean_abs_c": 0.014576416835188866, "sec": 12.6}
+{"step": 250, "dev_acc": 0.8203125, "dev_loss": 0.5852130949497223, "test_acc": 0.8268348623853211, "mean_abs_c": 0.003917102161794901, "sec": 15.7}
+{"step": 300, "dev_acc": 0.814453125, "dev_loss": 0.6177498400211334, "test_acc": 0.8279816513761468, "mean_abs_c": 0.0019527648529037833, "sec": 19.0}
+{"step": 350, "dev_acc": 0.814453125, "dev_loss": 0.6412020921707153, "test_acc": 0.8268348623853211, "mean_abs_c": 0.0012474999227561057, "sec": 22.2}
+{"step": 400, "dev_acc": 0.8125, "dev_loss": 0.659121572971344, "test_acc": 0.8256880733944955, "mean_abs_c": 0.0009053932339884341, "sec": 25.4}
+{"step": 450, "dev_acc": 0.810546875, "dev_loss": 0.673440009355545, "test_acc": 0.8256880733944955, "mean_abs_c": 0.0007080300292000174, "sec": 28.6}
+{"step": 500, "dev_acc": 0.810546875, "dev_loss": 0.6852807998657227, "test_acc": 0.8268348623853211, "mean_abs_c": 0.0005806506215594709, "sec": 31.9}
+{"step": 550, "dev_acc": 0.80859375, "dev_loss": 0.6953341364860535, "test_acc": 0.8256880733944955, "mean_abs_c": 0.0004918675898807123, "sec": 35.3}
+{"step": 600, "dev_acc": 0.806640625, "dev_loss": 0.7040479481220245, "test_acc": 0.8256880733944955, "mean_abs_c": 0.0004264785471605137, "sec": 38.4}
+{"step": 650, "dev_acc": 0.806640625, "dev_loss": 0.7117254137992859, "test_acc": 0.8256880733944955, "mean_abs_c": 0.00037630935315974057, "sec": 41.5}
+{"step": 700, "dev_acc": 0.806640625, "dev_loss": 0.7185787260532379, "test_acc": 0.8268348623853211, "mean_abs_c": 0.0003365869406843558, "sec": 44.7}
+{"step": 750, "dev_acc": 0.806640625, "dev_loss": 0.7247630953788757, "test_acc": 0.8279816513761468, "mean_abs_c": 0.0003043449332471937, "sec": 47.9}
+{"step": 800, "dev_acc": 0.806640625, "dev_loss": 0.7303946316242218, "test_acc": 0.8279816513761468, "mean_abs_c": 0.0002776467055082321, "sec": 51.2}
+{"step": 850, "dev_acc": 0.806640625, "dev_loss": 0.735560804605484, "test_acc": 0.8279816513761468, "mean_abs_c": 0.0002551748644327745, "sec": 54.4}
+{"step": 900, "dev_acc": 0.806640625, "dev_loss": 0.7403319478034973, "test_acc": 0.8279816513761468, "mean_abs_c": 0.00023598728061188012, "sec": 57.4}
+{"step": 950, "dev_acc": 0.806640625, "dev_loss": 0.7447627782821655, "test_acc": 0.8279816513761468, "mean_abs_c": 0.0002194257063092664, "sec": 60.6}
+{"step": 1000, "dev_acc": 0.806640625, "dev_loss": 0.7488966286182404, "test_acc": 0.8268348623853211, "mean_abs_c": 0.0002049813958001323, "sec": 63.5}

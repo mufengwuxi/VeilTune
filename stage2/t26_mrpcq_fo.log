@@ -1,0 +1,6 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 9279.85it/s]
+T26 42 {"run": "mrpcq_fo_k16_sp16_lr3e-4_s42", "acc": 0.718137264251709, "macro_f1": 0.6229477896800842, "f1_per_class": [0.43349753694581283, 0.8123980424143556]}
+T26 43 {"run": "mrpcq_fo_k16_sp16_lr1e-4_s43", "acc": 0.6495097875595093, "macro_f1": 0.5903930805467603, "f1_per_class": [0.43478260869565216, 0.7460035523978685]}
+T26 44 {"run": "mrpcq_fo_k16_sp16_lr1e-3_s44", "acc": 0.6519607901573181, "macro_f1": 0.6177859875973084, "f1_per_class": [0.5034965034965035, 0.7320754716981132]}
+T26_MEAN rl_tasks/mrpcq_fo_k16_sp16 acc 67.32 macroF1 61.04

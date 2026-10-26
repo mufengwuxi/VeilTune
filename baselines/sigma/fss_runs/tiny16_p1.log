@@ -1,0 +1,3 @@
+CUDA error at ./utils/gpu_mem.cu:51 code=2(cudaErrorMemoryAllocation) "cudaMallocAsync(&d_dummy_ptr, bytes, 0)" 
+CUDA error: out of memory
+Model=bert-tiny

@@ -1,0 +1,116 @@
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 394/394 [00:00<00:00, 6866.77it/s]
+
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 394/394 [00:00<00:00, 5979.89it/s]
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/provider/ttp_provider.py:40: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c_size = getattr(torch, op)(a, b, *args, **kwargs).size()
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/provider/ttp_provider.py:317: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c = getattr(torch, op)(a, b, *args, **kwargs)
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/beaver.py:82: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c._tensor += getattr(torch, op)(epsilon, b._tensor, *args, **kwargs)
+Process Process-2:
+Process Process-1:
+Traceback (most recent call last):
+  File "/root/miniconda3/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/root/miniconda3/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/context.py", line 30, in _launch
+    return_value = func(*func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/stage2/t12_rl_secure.py", line 77, in worker
+    grads = ops.loss_grad(h0p.cuda(), lens, pos, th, ysec)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/gpu_crypten_bp.py", line 115, in loss_grad
+    gz_out, gp = self.gelu_save(mm(hmid, w('ff1')) + w('ff1b'))
+                                ^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/gpu_crypten_bp.py", line 70, in <lambda>
+    W, mm = self.W, lambda a, b: a @ b
+                                 ~~^~~
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/cryptensor.py", line 522, in __matmul__
+    return self.matmul(tensor)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/cryptensor.py", line 338, in autograd_forward
+    return self.__getattribute__(name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/mpc.py", line 339, in binary_wrapper_function
+    result._tensor = getattr(result._tensor, name)(value, *args, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/arithmetic.py", line 486, in matmul
+    return self._arithmetic_function(y, "matmul")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/arithmetic.py", line 372, in _arithmetic_function
+    result.share = getattr(torch, op)(result.share, y, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/cuda/cuda_tensor.py", line 99, in __torch_function__
+    return HANDLED_FUNCTIONS[func](*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/cuda/cuda_tensor.py", line 262, in matmul
+    y_enc_span = torch.repeat_interleave(y_encoded, repeats=nb, dim=0)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 512.00 MiB. GPU 0 has a total capacity of 31.36 GiB of which 205.06 MiB is free. Process 2129 has 3.72 GiB memory in use. Process 2125 has 3.72 GiB memory in use. Process 2121 has 3.73 GiB memory in use. Process 2133 has 3.72 GiB memory in use. Process 4909 has 3.76 GiB memory in use. Process 4913 has 3.76 GiB memory in use. Process 4917 has 3.27 GiB memory in use. Process 5192 has 2.26 GiB memory in use. Including non-PyTorch memory, this process has 2.26 GiB memory in use. Process 5195 has 764.00 MiB memory in use. Of the allocated memory 1.54 GiB is allocated by PyTorch, and 58.97 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/root/miniconda3/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/root/miniconda3/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/context.py", line 30, in _launch
+    return_value = func(*func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/stage2/t12_rl_secure.py", line 77, in worker
+    grads = ops.loss_grad(h0p.cuda(), lens, pos, th, ysec)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/gpu_crypten_bp.py", line 115, in loss_grad
+    gz_out, gp = self.gelu_save(mm(hmid, w('ff1')) + w('ff1b'))
+                                ^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/gpu_crypten_bp.py", line 70, in <lambda>
+    W, mm = self.W, lambda a, b: a @ b
+                                 ~~^~~
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/cryptensor.py", line 522, in __matmul__
+    return self.matmul(tensor)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/cryptensor.py", line 338, in autograd_forward
+    return self.__getattribute__(name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/mpc.py", line 339, in binary_wrapper_function
+    result._tensor = getattr(result._tensor, name)(value, *args, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/arithmetic.py", line 486, in matmul
+    return self._arithmetic_function(y, "matmul")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/arithmetic.py", line 372, in _arithmetic_function
+    result.share = getattr(torch, op)(result.share, y, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/cuda/cuda_tensor.py", line 99, in __torch_function__
+    return HANDLED_FUNCTIONS[func](*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/crypten/cuda/cuda_tensor.py", line 262, in matmul
+    y_enc_span = torch.repeat_interleave(y_encoded, repeats=nb, dim=0)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 512.00 MiB. GPU 0 has a total capacity of 31.36 GiB of which 365.06 MiB is free. Process 2129 has 3.72 GiB memory in use. Process 2125 has 3.72 GiB memory in use. Process 2121 has 3.73 GiB memory in use. Process 2133 has 3.72 GiB memory in use. Process 4909 has 3.76 GiB memory in use. Process 4913 has 3.76 GiB memory in use. Process 4917 has 3.27 GiB memory in use. Including non-PyTorch memory, this process has 2.26 GiB memory in use. Process 5193 has 2.26 GiB memory in use. Process 5195 has 764.00 MiB memory in use. Of the allocated memory 1.54 GiB is allocated by PyTorch, and 58.97 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+ERROR:root:One of the parties failed. Check past logs
+Traceback (most recent call last):
+  File "/workspace/veiltune/stage2/t12_rl_secure.py", line 123, in <module>
+    res = {r['rank']: r['out'] for r in worker(a.mode, a.batches) if r}
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable

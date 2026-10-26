@@ -1,0 +1,53 @@
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 10269.74it/s]Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 394/394 [00:00<00:00, 11979.12it/s]
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/provider/ttp_provider.py:40: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c_size = getattr(torch, op)(a, b, *args, **kwargs).size()
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/provider/ttp_provider.py:317: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c = getattr(torch, op)(a, b, *args, **kwargs)
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/beaver.py:82: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c._tensor += getattr(torch, op)(epsilon, b._tensor, *args, **kwargs)
+T13 total_s 29.46 rounds 1313 GB 37.73 N 628
+T13 fwd gelu_save gelu_save cmp 72 15.699 72
+T13 fwd gelu_save gelu_save mul 81 9.303 81
+T13 fwd softmax_save max_tree cmp 384 3.652 384
+T13 fwd softmax_save exp_free mul 80 3.038 80
+T13 bwd linear linear matmul 94 1.835 94
+T13 fwd linear linear matmul 48 0.887 48
+T13 bwd ln_bwd ln_bwd mul 51 0.583 51
+T13 bwd linear linear mul 9 0.581 9
+T13 bwd softmax_bwd softmax_bwd mul 16 0.552 16
+T13 fwd softmax_save recip_den cmp 64 0.457 64
+T13 fwd ln_save ln_save mul 34 0.437 34
+T13 fwd softmax_save max_tree mul 48 0.271 48
+T13 fwd ln_save rsqrt_newton cmp 136 0.157 136
+T13 fwd softmax_save softmax_save mul 8 0.141 8
+T13 fwd softmax_save recip_den mul 64 0.113 64
+T13 fwd ln_save rsqrt_newton mul 102 0.025 102
+T13 fwd _sigmoid _sigmoid cmp 8 0.0 8
+T13 fwd _sigmoid exp_neg mul 8 0.0 8
+T13 fwd _sigmoid inv_1p mul 4 0.0 4
+T13 fwd _sigmoid _sigmoid mul 2 0.0 2
+T13T fwd gelu_save 9.96
+T13T fwd softmax_save 5.34
+T13T fwd ln_save 2.55
+T13T bwd ln_bwd 0.43
+T13T bwd softmax_bwd 0.26
+T13T fwd _sigmoid 0.07

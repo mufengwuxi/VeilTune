@@ -1,0 +1,7 @@
+# stage lines copied from worker rl_leak8/logs (list fields dropped)
+{"stage": "protocol", "steps": 1000, "test_thetaT": 0.9225}
+{"stage": "baseline_local", "test": 0.8995, "agree_thetaT": 0.909}
+{"stage": "attack_fit_logits", "K": 1, "test": 0.912, "agree_thetaT": 0.9215}
+{"stage": "attack_fit_logits+y", "K": 1, "test": 0.912, "agree_thetaT": 0.9215}
+{"stage": "attack_fit_logits", "K": 100, "test": 0.9185, "agree_thetaT": 0.927}
+{"stage": "attack_fit_logits+y", "K": 100, "test": 0.919, "agree_thetaT": 0.9265}

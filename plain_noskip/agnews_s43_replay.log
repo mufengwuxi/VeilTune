@@ -1,0 +1,8 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 6034.37it/s]
+T33 {"step": 25, "mode": "replay", "dev_acc": 0.861328125, "test_acc": 0.866}
+T33 {"step": 50, "mode": "replay", "dev_acc": 0.888671875, "test_acc": 0.8835}
+T33 {"step": 75, "mode": "replay", "dev_acc": 0.869140625, "test_acc": 0.8655}
+T33 {"step": 100, "mode": "replay", "dev_acc": 0.884765625, "test_acc": 0.878}
+T33 {"step": 125, "mode": "replay", "dev_acc": 0.880859375, "test_acc": 0.873}
+T33 {"step": 150, "mode": "replay", "dev_acc": 0.880859375, "test_acc": 0.8785}

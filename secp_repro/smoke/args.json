@@ -1,0 +1,1 @@
+{"seed": 42, "kshot": 16, "n_prompt": 50, "dim": 500, "pop": 20, "sigma": 1.0, "budget": 200, "eval_every": 5, "chunk": 64, "out": "secp_repro/smoke", "task": "sst2", "n_train": 32}

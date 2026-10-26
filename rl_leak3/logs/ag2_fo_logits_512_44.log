@@ -1,0 +1,18 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 394/394 [00:00<00:00, 9104.79it/s]
+{"stage": "owner_pretrain", "dev": 0.923828125, "test": 0.909, "sec": 61.9}
+{"stage": "theta0", "test": 0.909, "n_client": 64}
+/workspace/veiltune/rl_leak.py:143: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  h = h.detach(); c = float(loss)
+{"stage": "protocol", "steps": 1000, "test_thetaT": 0.8995, "sec": 77.6}
+{"stage": "baseline_local", "test": 0.879, "agree_thetaT": 0.943}
+{"stage": "baseline_zeroshot", "test": 0.744}
+{"stage": "attack_fit_logits", "K": 1, "reveal": "logits", "it": 3000, "mse": 0.02961626462638378, "dW_rel_err_mean": 3.113589778713975, "dW_rel_err": [3.0277765019962475, 2.636934002937094, 4.496328081848388, 2.6817529249080074, 2.9460479929252346, 3.3182622335200374, 2.149525674458625, 3.6520908171181654], "test": 0.895, "agree_thetaT": 0.961}
+{"stage": "attack_fit_logits+y", "K": 1, "reveal": "logits", "it": 3000, "mse": 0.007438192144036293, "dW_rel_err_mean": 3.158887066649803, "dW_rel_err": [3.122707093509439, 2.6873298430976496, 4.602619002626199, 2.6876370273576273, 2.98297654050519, 3.4014112053480803, 2.176700846481919, 3.609714974272321], "test": 0.893, "agree_thetaT": 0.9625}
+{"stage": "attack_fit_logits", "K": 100, "reveal": "logits", "it": 3000, "mse": 0.0329088419675827, "dW_rel_err_mean": 3.5384825632622174, "dW_rel_err": [3.459478971762491, 2.905150845606743, 5.522619723419272, 2.8827628595220225, 3.1946392454003294, 3.9703720864466554, 2.387325751321723, 3.9855110226185047], "test": 0.895, "agree_thetaT": 0.969}
+{"stage": "attack_fit_logits+y", "K": 100, "reveal": "logits", "it": 3000, "mse": 0.04786636307835579, "dW_rel_err_mean": 3.622787183106093, "dW_rel_err": [3.603733282470629, 2.9327824002907543, 5.70995691053786, 2.9587750518488556, 3.251256679350464, 3.9718176742092335, 2.449292122923542, 4.104683343217407], "test": 0.898, "agree_thetaT": 0.969}
+{"stage": "reference", "dW_rel_err_theta0_vs_T": 0.5069647597792026, "dW_norm_T": [2.541844694824551, 1.1513371579563219, 1.5863542036529428, 1.1626827930020216, 2.6042250559642515, 0.9926542596865509, 2.756806827099876, 0.8956743827147954]}
+LEAK_DONE

@@ -1,0 +1,4 @@
+mrpc mrpc/train-00000-of-00001.parquet 3668 ['sentence1', 'sentence2', 'label', 'idx']
+mrpc mrpc/validation-00000-of-00001.parquet 408 ['sentence1', 'sentence2', 'label', 'idx']
+rte rte/train-00000-of-00001.parquet 2490 ['sentence1', 'sentence2', 'label', 'idx']
+rte rte/validation-00000-of-00001.parquet 277 ['sentence1', 'sentence2', 'label', 'idx']

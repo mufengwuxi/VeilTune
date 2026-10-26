@@ -1,0 +1,65 @@
+"""User-space network emulation for timing (tc is not permitted in this container).
+Wraps the communication methods of CrypTen's DistributedCommunicator (framework files untouched) and, after each
+collective between the two computing parties, sleeps for the time the same message pattern would take on a link with
+bandwidth NET_MBPS and round-trip time NET_RTT_MS:
+  all_reduce (gloo ring, 2 parties = reduce-scatter + all-gather): RTT + n*8B / bw   (n elements per direction)
+  send/recv/broadcast/gather/scatter/*_obj:                         RTT/2 + bytes / bw
+Traffic with the TTP (dealer; preprocessing) and the TTP server process itself are not delayed.
+Usage: NET_MBPS=3000 NET_RTT_MS=0.8 NETEM_OUT=dir python stage2/t37_netem.py <script.py> <args...>"""
+import os, sys, json, time, runpy
+from crypten.communicator.distributed_communicator import DistributedCommunicator as DC
+MBPS = float(os.environ.get('NET_MBPS', '0')); RTT = float(os.environ.get('NET_RTT_MS', '0')) / 1e3
+BPS = MBPS * 1e6 / 8 if MBPS > 0 else float('inf'); OUT = os.environ.get('NETEM_OUT', '/tmp')
+ST = {'calls': 0, 'sleep_s': 0.0, 'lat_s': 0.0, 'bw_s': 0.0, 'bytes_dir': 0, 'ttp_s': 0.0, 'ttp_n': 0}
+
+def _nel(x):
+    if hasattr(x, 'nelement'): return x.nelement()
+    if isinstance(x, (list, tuple)): return sum(_nel(y) for y in x)
+    return 0
+
+def _wrap(name):
+    orig = getattr(DC, name)
+    def w(self, *args, **kw):
+        res = orig(self, *args, **kw)
+        try:
+            r = self.get_rank()
+            if r not in (0, 1): return res
+            tg = (getattr(self, 'ttp_group', None), getattr(self, 'ttp_comm_group', None))
+            if any(a is not None and any(a is g for g in tg if g is not None) for a in list(args) + list(kw.values())): return res
+            if name == 'all_reduce':
+                n = _nel(args[0]) * self.BYTES_PER_ELEMENT; lat = RTT
+            elif name in ('send_obj', 'broadcast_obj'):
+                n = sys.getsizeof(args[0]); lat = RTT / 2
+            elif name == 'recv_obj':
+                n = sys.getsizeof(res); lat = RTT / 2
+            elif name == 'scatter':
+                n = (_nel(res) if res is not None else 0) * self.BYTES_PER_ELEMENT; lat = RTT / 2
+            elif name == 'barrier':
+                n = 0; lat = RTT / 2
+            else:
+                n = _nel(args[0]) * self.BYTES_PER_ELEMENT; lat = RTT / 2
+            bw = n / BPS
+            d = lat + bw
+            if d > 0: time.sleep(d)
+            ST['calls'] += 1; ST['sleep_s'] += d; ST['lat_s'] += lat; ST['bw_s'] += bw; ST['bytes_dir'] += n
+            if True:
+                json.dump(dict(ST, rank=r, mbps=MBPS, rtt_ms=RTT * 1e3, crypten_rounds=self.comm_rounds, crypten_bytes=self.comm_bytes), open(f'{OUT}/netem_rank{r}.json', 'w'))
+        except Exception as e:
+            print('NETEM_ERR', name, repr(e), flush=True)
+        return res
+    w.__name__ = name
+    setattr(DC, name, w)
+
+for nm in ['send', 'recv', 'isend', 'irecv', 'scatter', 'reduce', 'all_reduce', 'gather', 'all_gather', 'broadcast',
+           'barrier', 'send_obj', 'recv_obj', 'broadcast_obj']:
+    _wrap(nm)
+from crypten.mpc.provider.ttp_provider import TTPClient as _TC
+_C = _TC._TTPClient__TTPClient; _orig_req = _C.ttp_request
+def _req(self, *a, **k):
+    t0 = time.perf_counter(); r = _orig_req(self, *a, **k); ST['ttp_s'] += time.perf_counter() - t0; ST['ttp_n'] += 1
+    if ST['ttp_n'] % 50 == 0: json.dump(dict(ST, rank=0, mbps=MBPS, rtt_ms=RTT * 1e3), open(f'{OUT}/netem_rank0_ttp.json', 'w'))
+    return r
+_C.ttp_request = _req
+os.makedirs(OUT, exist_ok=True)
+script = sys.argv[1]; sys.argv = sys.argv[1:]
+runpy.run_path(script, run_name='__main__')

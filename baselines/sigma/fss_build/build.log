@@ -1,0 +1,406 @@
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h(223): warning #20012-D: __host__ annotation is ignored on a function("DenseStorage") that is explicitly defaulted on its first declaration
+     __attribute__((host)) __attribute__((device)) 
+                    ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h(223): warning #20012-D: __device__ annotation is ignored on a function("DenseStorage") that is explicitly defaulted on its first declaration
+     __attribute__((host)) __attribute__((device)) 
+                                          ^
+
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h(233): warning #20012-D: __host__ annotation is ignored on a function("operator=") that is explicitly defaulted on its first declaration
+     __attribute__((host)) __attribute__((device)) 
+                    ^
+
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h(233): warning #20012-D: __device__ annotation is ignored on a function("operator=") that is explicitly defaulted on its first declaration
+     __attribute__((host)) __attribute__((device)) 
+                                          ^
+
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h(248): warning #20012-D: __host__ annotation is ignored on a function("DenseStorage") that is explicitly defaulted on its first declaration
+     __attribute__((host)) __attribute__((device)) 
+                    ^
+
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h(248): warning #20012-D: __device__ annotation is ignored on a function("DenseStorage") that is explicitly defaulted on its first declaration
+     __attribute__((host)) __attribute__((device)) 
+                                          ^
+
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h(249): warning #20012-D: __host__ annotation is ignored on a function("operator=") that is explicitly defaulted on its first declaration
+     __attribute__((host)) __attribute__((device)) 
+                    ^
+
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h(249): warning #20012-D: __device__ annotation is ignored on a function("operator=") that is explicitly defaulted on its first declaration
+     __attribute__((host)) __attribute__((device)) 
+                                          ^
+
+./ext/sytorch/ext/cryptoTools/cryptoTools/Crypto/PRNG.h(39): warning #815-D: type qualifier on return type is meaningless
+          const block getSeed() const;
+          ^
+
+./utils/gpu_comms.h(315): warning #940-D: missing return statement at end of non-void function "GpuPeer::addAndReconstruct(int, u64, u32 *, u32 *, Stats *, bool)"
+      }
+      ^
+
+./backend/sigma.h(267): warning #611-D: overloaded virtual function "Backend<T>::matmul [with T=u64]" is only partially overridden in class "SIGMAKeygen<u64>"
+  class SIGMAKeygen : public Backend<T>
+        ^
+          detected during instantiation of class "SIGMAKeygen<T> [with T=u64]" at line 189 of /workspace/fss_build/sigma_mini.cu
+
+./backend/sigma.h(52): warning #611-D: overloaded virtual function "Backend<T>::matmul [with T=u64]" is only partially overridden in class "SIGMA<u64>"
+  class SIGMA : public Backend<T>
+        ^
+          detected during instantiation of class "SIGMA<T> [with T=u64]" at line 209 of /workspace/fss_build/sigma_mini.cu
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h(223): warning #20012-D: __host__ annotation is ignored on a function("DenseStorage") that is explicitly defaulted on its first declaration
+     __attribute__((host)) __attribute__((device)) 
+                    ^
+
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h(223): warning #20012-D: __device__ annotation is ignored on a function("DenseStorage") that is explicitly defaulted on its first declaration
+     __attribute__((host)) __attribute__((device)) 
+                                          ^
+
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h(233): warning #20012-D: __host__ annotation is ignored on a function("operator=") that is explicitly defaulted on its first declaration
+     __attribute__((host)) __attribute__((device)) 
+                    ^
+
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h(233): warning #20012-D: __device__ annotation is ignored on a function("operator=") that is explicitly defaulted on its first declaration
+     __attribute__((host)) __attribute__((device)) 
+                                          ^
+
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h(248): warning #20012-D: __host__ annotation is ignored on a function("DenseStorage") that is explicitly defaulted on its first declaration
+     __attribute__((host)) __attribute__((device)) 
+                    ^
+
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h(248): warning #20012-D: __device__ annotation is ignored on a function("DenseStorage") that is explicitly defaulted on its first declaration
+     __attribute__((host)) __attribute__((device)) 
+                                          ^
+
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h(249): warning #20012-D: __host__ annotation is ignored on a function("operator=") that is explicitly defaulted on its first declaration
+     __attribute__((host)) __attribute__((device)) 
+                    ^
+
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h(249): warning #20012-D: __device__ annotation is ignored on a function("operator=") that is explicitly defaulted on its first declaration
+     __attribute__((host)) __attribute__((device)) 
+                                          ^
+
+./ext/sytorch/ext/cryptoTools/cryptoTools/Crypto/PRNG.h(39): warning #815-D: type qualifier on return type is meaningless
+          const block getSeed() const;
+          ^
+
+./utils/gpu_comms.h(315): warning #940-D: missing return statement at end of non-void function "GpuPeer::addAndReconstruct(int, u64, u32 *, u32 *, Stats *, __nv_bool)"
+      }
+      ^
+
+./backend/sigma.h(267): warning #611-D: overloaded virtual function "Backend<T>::matmul [with T=u64]" is only partially overridden in class "SIGMAKeygen<u64>"
+  class SIGMAKeygen : public Backend<T>
+        ^
+          detected during instantiation of class "SIGMAKeygen<T> [with T=u64]" at line 189 of /workspace/fss_build/sigma_mini.cu
+
+./backend/sigma.h(52): warning #611-D: overloaded virtual function "Backend<T>::matmul [with T=u64]" is only partially overridden in class "SIGMA<u64>"
+  class SIGMA : public Backend<T>
+        ^
+          detected during instantiation of class "SIGMA<T> [with T=u64]" at line 209 of /workspace/fss_build/sigma_mini.cu
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+          detected during instantiation of "std::complex<T> Eigen::complex_operator_detail::complex_multiply(const std::complex<T> &, const std::complex<T> &) [with T=float]" at line 234 of /usr/include/eigen3/Eigen/src/Core/arch/CUDA/Complex.h
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+          detected during:
+            instantiation of "std::complex<T> Eigen::complex_operator_detail::complex_divide_fast(const std::complex<T> &, const std::complex<T> &) [with T=float]" at line 96 of /usr/include/eigen3/Eigen/src/Core/arch/CUDA/Complex.h
+            instantiation of "std::complex<T> Eigen::complex_operator_detail::complex_divide(const std::complex<T> &, const std::complex<T> &) [with T=float]" at line 234 of /usr/include/eigen3/Eigen/src/Core/arch/CUDA/Complex.h
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+          detected during instantiation of "std::complex<T> Eigen::complex_operator_detail::complex_multiply(const std::complex<T> &, const std::complex<T> &) [with T=double]" at line 235 of /usr/include/eigen3/Eigen/src/Core/arch/CUDA/Complex.h
+
+Warning #20015-D: calling a constexpr __host__ function from a __host__ __device__ function is not allowed. The experimental flag '--expt-relaxed-constexpr' can be used to allow this.
+          detected during:
+            instantiation of "std::complex<T> Eigen::complex_operator_detail::complex_divide_fast(const std::complex<T> &, const std::complex<T> &) [with T=double]" at line 96 of /usr/include/eigen3/Eigen/src/Core/arch/CUDA/Complex.h
+            instantiation of "std::complex<T> Eigen::complex_operator_detail::complex_divide(const std::complex<T> &, const std::complex<T> &) [with T=double]" at line 235 of /usr/include/eigen3/Eigen/src/Core/arch/CUDA/Complex.h
+
+./ext/sytorch/include/sytorch/layers/layers.h(843): warning #611-D: overloaded virtual function "Layer<T>::_forward [with T=u64]" is only partially overridden in class "PlaceHolderLayer<u64>"
+  class PlaceHolderLayer : public Layer<T>
+        ^
+          detected during:
+            instantiation of class "PlaceHolderLayer<T> [with T=u64]" at line 108 of ./ext/sytorch/include/sytorch/module.h
+            instantiation of "void SytorchModule<T>::genGraphAndExecutionOrder(Tensor<T> &) [with T=u64]" at line 122 of ./ext/sytorch/include/sytorch/module.h
+            instantiation of "void SytorchModule<T>::init(u64, Tensor<T> &) [with T=u64]" at line 66 of /workspace/fss_build/sigma_mini.cu
+
+./ext/sytorch/include/sytorch/backend/cleartext.h(29): warning #611-D: overloaded virtual function "Backend<T>::matmul [with T=u64]" is only partially overridden in class "ClearText<u64>"
+  class ClearText : public Backend<T> {
+        ^
+          detected during:
+            instantiation of class "ClearText<T> [with T=u64]" at line 33 of ./ext/sytorch/include/sytorch/backend/default.h
+            instantiation of "Backend<T> *defaultBackend<T>() [with T=u64]" at line 76 of ./ext/sytorch/include/sytorch/layers/layers.h
+            instantiation of "Layer<T>::Layer(const std::string &) [with T=u64]" at line 847 of ./ext/sytorch/include/sytorch/layers/layers.h
+            instantiation of "PlaceHolderLayer<T>::PlaceHolderLayer(const std::string &) [with T=u64]" at line 108 of ./ext/sytorch/include/sytorch/module.h
+            instantiation of "void SytorchModule<T>::genGraphAndExecutionOrder(Tensor<T> &) [with T=u64]" at line 122 of ./ext/sytorch/include/sytorch/module.h
+            instantiation of "void SytorchModule<T>::init(u64, Tensor<T> &) [with T=u64]" at line 66 of /workspace/fss_build/sigma_mini.cu
+
+./ext/sytorch/include/sytorch/backend/cleartext.h(29): warning #611-D: overloaded virtual function "Backend<T>::conv2D [with T=u64]" is only partially overridden in class "ClearText<u64>"
+  class ClearText : public Backend<T> {
+        ^
+          detected during:
+            instantiation of class "ClearText<T> [with T=u64]" at line 33 of ./ext/sytorch/include/sytorch/backend/default.h
+            instantiation of "Backend<T> *defaultBackend<T>() [with T=u64]" at line 76 of ./ext/sytorch/include/sytorch/layers/layers.h
+            instantiation of "Layer<T>::Layer(const std::string &) [with T=u64]" at line 847 of ./ext/sytorch/include/sytorch/layers/layers.h
+            instantiation of "PlaceHolderLayer<T>::PlaceHolderLayer(const std::string &) [with T=u64]" at line 108 of ./ext/sytorch/include/sytorch/module.h
+            instantiation of "void SytorchModule<T>::genGraphAndExecutionOrder(Tensor<T> &) [with T=u64]" at line 122 of ./ext/sytorch/include/sytorch/module.h
+            instantiation of "void SytorchModule<T>::init(u64, Tensor<T> &) [with T=u64]" at line 66 of /workspace/fss_build/sigma_mini.cu
+
+./ext/sytorch/include/sytorch/module.h(183): warning #177-D: variable "i" was declared but never referenced
+              int i = 0;
+                  ^
+
+./ext/sytorch/include/sytorch/layers/layers.h(1636): warning #611-D: overloaded virtual function "Layer<T>::_forward [with T=u64]" is only partially overridden in class "_MHADummy<u64>"
+  class _MHADummy : public Layer<T>
+        ^
+          detected during:
+            instantiation of class "_MHADummy<T> [with T=u64]" at line 73 of experiments/sigma/gpt2.h
+            instantiation of "GPUGPT2TransformerBlock<T>::GPUGPT2TransformerBlock(u64, u64, std::string, std::string, __nv_bool) [with T=u64]" at line 107 of experiments/sigma/gpt2.h
+            instantiation of "GPUGPT2<T>::GPUGPT2(u64, u64, u64, std::string, std::string, __nv_bool) [with T=u64]" at line 63 of /workspace/fss_build/sigma_mini.cu
+
+./ext/sytorch/include/sytorch/layers/layers.h(571): warning #611-D: overloaded virtual function "Layer<T>::_forward [with T=u64]" is only partially overridden in class "FC<u64>"
+  class FC : public Layer<T>
+        ^
+          detected during:
+            instantiation of class "FC<T> [with T=u64]" at line 40 of experiments/sigma/gpt2.h
+            instantiation of "FFN<T>::FFN(u64, u64) [with T=u64]" at line 74 of experiments/sigma/gpt2.h
+            instantiation of "GPUGPT2TransformerBlock<T>::GPUGPT2TransformerBlock(u64, u64, std::string, std::string, __nv_bool) [with T=u64]" at line 107 of experiments/sigma/gpt2.h
+            instantiation of "GPUGPT2<T>::GPUGPT2(u64, u64, u64, std::string, std::string, __nv_bool) [with T=u64]" at line 63 of /workspace/fss_build/sigma_mini.cu
+
+./ext/sytorch/include/sytorch/layers/layers.h(986): warning #611-D: overloaded virtual function "Layer<T>::_forward [with T=u64]" is only partially overridden in class "GeLU<u64>"
+  class GeLU : public Layer<T>
+        ^
+          detected during:
+            instantiation of class "GeLU<T> [with T=u64]" at line 98 of ./ext/sytorch/include/sytorch/module.h
+            instantiation of "Tensor<T> &SytorchModule<T>::functionalGraphGen<LayerType,Args...>(std::vector<Tensor<T> *, std::allocator<Tensor<T> *>>, Args...) [with T=u64, LayerType=GeLU<u64>, Args=<>]" at line 475 of ./ext/sytorch/include/sytorch/module.h
+            instantiation of "Tensor<T> &SytorchModule<T>::gelu(Tensor<T> &) [with T=u64]" at line 46 of experiments/sigma/gpt2.h
+            instantiation of "Tensor<T> &FFN<T>::_forward(Tensor<T> &) [with T=u64]" at line 42 of experiments/sigma/gpt2.h
+            instantiation of "FFN<T>::FFN(u64, u64) [with T=u64]" at line 74 of experiments/sigma/gpt2.h
+            instantiation of "GPUGPT2TransformerBlock<T>::GPUGPT2TransformerBlock(u64, u64, std::string, std::string, __nv_bool) [with T=u64]" at line 107 of experiments/sigma/gpt2.h
+            instantiation of "GPUGPT2<T>::GPUGPT2(u64, u64, u64, std::string, std::string, __nv_bool) [with T=u64]" at line 63 of /workspace/fss_build/sigma_mini.cu
+
+./ext/sytorch/include/sytorch/layers/layers.h(1088): warning #611-D: overloaded virtual function "Layer<T>::_forward [with T=u64]" is only partially overridden in class "LayerNorm<u64>"
+  class LayerNorm : public Layer<T>
+        ^
+          detected during:
+            instantiation of class "LayerNorm<T> [with T=u64]" at line 75 of experiments/sigma/gpt2.h
+            instantiation of "GPUGPT2TransformerBlock<T>::GPUGPT2TransformerBlock(u64, u64, std::string, std::string, __nv_bool) [with T=u64]" at line 107 of experiments/sigma/gpt2.h
+            instantiation of "GPUGPT2<T>::GPUGPT2(u64, u64, u64, std::string, std::string, __nv_bool) [with T=u64]" at line 63 of /workspace/fss_build/sigma_mini.cu
+
+./ext/sytorch/include/sytorch/layers/layers.h(1010): warning #611-D: overloaded virtual function "Layer<T>::_forward [with T=u64]" is only partially overridden in class "SiLU<u64>"
+  class SiLU : public Layer<T>
+        ^
+          detected during:
+            instantiation of class "SiLU<T> [with T=u64]" at line 98 of ./ext/sytorch/include/sytorch/module.h
+            instantiation of "Tensor<T> &SytorchModule<T>::functionalGraphGen<LayerType,Args...>(std::vector<Tensor<T> *, std::allocator<Tensor<T> *>>, Args...) [with T=u64, LayerType=SiLU<u64>, Args=<>]" at line 488 of ./ext/sytorch/include/sytorch/module.h
+            instantiation of "Tensor<T> &SytorchModule<T>::silu(Tensor<T> &) [with T=u64]" at line 51 of experiments/sigma/llama2.h
+            instantiation of "Tensor<T> &LlamaFFN<T>::_forward(Tensor<T> &) [with T=u64]" at line 45 of experiments/sigma/llama2.h
+            instantiation of "LlamaFFN<T>::LlamaFFN(u64, u64) [with T=u64]" at line 74 of experiments/sigma/llama2.h
+            instantiation of "GPULlamaTransformerBlock<T>::GPULlamaTransformerBlock(u64, u64, u64, __nv_bool) [with T=u64]" at line 105 of experiments/sigma/llama2.h
+            instantiation of "GPULlama<T>::GPULlama(u64, u64, u64, u64, __nv_bool) [with T=u64]" at line 161 of /workspace/fss_build/sigma_mini.cu
+
+./ext/sytorch/include/sytorch/layers/layers.h(1128): warning #611-D: overloaded virtual function "Layer<T>::_forward [with T=u64]" is only partially overridden in class "RMSNorm<u64>"
+  class RMSNorm : public Layer<T>
+        ^
+          detected during:
+            instantiation of class "RMSNorm<T> [with T=u64]" at line 75 of experiments/sigma/llama2.h
+            instantiation of "GPULlamaTransformerBlock<T>::GPULlamaTransformerBlock(u64, u64, u64, __nv_bool) [with T=u64]" at line 105 of experiments/sigma/llama2.h
+            instantiation of "GPULlama<T>::GPULlama(u64, u64, u64, u64, __nv_bool) [with T=u64]" at line 161 of /workspace/fss_build/sigma_mini.cu
+
+./ext/sytorch/include/sytorch/backend/llama_base.h(45): warning #611-D: overloaded virtual function "Backend<T>::matmul [with T=u64]" is only partially overridden in class "LlamaBase<u64>"
+  class LlamaBase : public Backend<T>
+        ^
+          detected during:
+            instantiation of class "LlamaBase<T> [with T=u64]" at line 26 of ./ext/sytorch/include/sytorch/backend/llama_transformer.h
+            instantiation of class "LlamaTransformer<T> [with T=u64]" at line 297 of ./backend/sigma.h
+            instantiation of "SIGMAKeygen<T>::SIGMAKeygen(int, int, int, std::string, size_t) [with T=u64]" at line 189 of /workspace/fss_build/sigma_mini.cu
+
+./ext/sytorch/include/sytorch/backend/llama_base.h(45): warning #611-D: overloaded virtual function "Backend<T>::conv2D [with T=u64]" is only partially overridden in class "LlamaBase<u64>"
+  class LlamaBase : public Backend<T>
+        ^
+          detected during:
+            instantiation of class "LlamaBase<T> [with T=u64]" at line 26 of ./ext/sytorch/include/sytorch/backend/llama_transformer.h
+            instantiation of class "LlamaTransformer<T> [with T=u64]" at line 297 of ./backend/sigma.h
+            instantiation of "SIGMAKeygen<T>::SIGMAKeygen(int, int, int, std::string, size_t) [with T=u64]" at line 189 of /workspace/fss_build/sigma_mini.cu
+
+./ext/sytorch/include/sytorch/backend/llama_base.h(472): warning #997-D: function "Backend<T>::div(Tensor<T> &, T, u64) [with T=u64]" is hidden by "LlamaBase<T>::div [with T=u64]" -- virtual function override intended?
+      void div(const Tensor<T> &in, T divisor, u64 scale)
+           ^
+          detected during:
+            instantiation of class "LlamaBase<T> [with T=u64]" at line 26 of ./ext/sytorch/include/sytorch/backend/llama_transformer.h
+            instantiation of class "LlamaTransformer<T> [with T=u64]" at line 297 of ./backend/sigma.h
+            instantiation of "SIGMAKeygen<T>::SIGMAKeygen(int, int, int, std::string, size_t) [with T=u64]" at line 189 of /workspace/fss_build/sigma_mini.cu
+
+./ext/sytorch/include/sytorch/layers/layers.h(1675): warning #611-D: overloaded virtual function "Layer<T>::_forward [with T=u64]" is only partially overridden in class "_ScalarDiv<u64>"
+  class _ScalarDiv : public Layer<T>
+        ^
+          detected during:
+            instantiation of class "_ScalarDiv<T> [with T=u64]" at line 180 of ./ext/sytorch/include/sytorch/backend/llama_transformer.h
+            instantiation of "void LlamaTransformer<T>::doOptimizeDiv(LayerGraphNode<T> *, LayerGraphNode<T> *) [with T=u64]" at line 223 of ./ext/sytorch/include/sytorch/backend/llama_transformer.h
+            instantiation of "void LlamaTransformer<T>::optimize(LayerGraphNode<T> *) [with T=u64]" at line 297 of ./backend/sigma.h
+            implicit generation of "LlamaTransformer<T>::LlamaTransformer() noexcept [with T=u64]" at line 297 of ./backend/sigma.h
+            instantiation of class "LlamaTransformer<T> [with T=u64]" at line 297 of ./backend/sigma.h
+            instantiation of "SIGMAKeygen<T>::SIGMAKeygen(int, int, int, std::string, size_t) [with T=u64]" at line 189 of /workspace/fss_build/sigma_mini.cu
+
+./fss/gpu_select.cu(100): warning #68-D: integer conversion resulted in a change of sign
+              oneBitDcfK2[i] = -2 * maskX[i];
+                               ^
+          detected during:
+            instantiation of "void keyGenSelectKernel(int, TMaskB *, TIn *, TOut *, TOut *, TOut *, TOut *, int) [with TIn=u64, TOut=u64, TMaskB=u64]" at line 124
+            instantiation of "TOut *gpuKeyGenSelect<TIn,TOut,TMaskB>(uint8_t **, int, int, TIn *, TMaskB *, int, __nv_bool) [with TIn=u64, TOut=u64, TMaskB=u64]" at line 37 of ./fss/gpu_lut.cu
+            instantiation of "TOut *gpuKeyGenLUT<TIn,TOut>(uint8_t **, int, int, int, int, TIn *, AESGlobalContext *) [with TIn=u8, TOut=u64]" at line 119 of ./fss/gpu_gelu.cu
+            instantiation of "T *gpuKeyGenGelu<T,TClip,clipBw>(uint8_t **, int, int, int, int, int, T *, AESGlobalContext *) [with T=u64, TClip=u8, clipBw=8]" at line 337 of ./backend/sigma.h
+            instantiation of "void SIGMAKeygen<T>::gelu(const Tensor<T> &, Tensor<T> &, u64, u64) [with T=u64]" at line 303 of ./backend/sigma.h
+            instantiation of "SIGMAKeygen<T>::SIGMAKeygen(int, int, int, std::string, size_t) [with T=u64]" at line 189 of /workspace/fss_build/sigma_mini.cu
+
+./backend/sigma.h(347): warning #2361-D: invalid narrowing conversion from "unsigned long" to "int"
+          AvgPoolParams p = {bw, bw, scale, 0, 0, 1, x.shape[0], x.shape[1], 1, 1, x.shape[1], 1, x.shape[1], 0, 0, 0, 0};
+                                     ^
+          detected during:
+            instantiation of "void SIGMAKeygen<T>::SIGMALayernormKeygen(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64, __nv_bool) [with T=u64]" at line 362
+            instantiation of "void SIGMAKeygen<T>::layernorm(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64) [with T=u64]" at line 303
+            instantiation of "SIGMAKeygen<T>::SIGMAKeygen(int, int, int, std::string, size_t) [with T=u64]" at line 189 of /workspace/fss_build/sigma_mini.cu
+
+./backend/sigma.h(347): warning #2361-D: invalid narrowing conversion from "unsigned long" to "int"
+          AvgPoolParams p = {bw, bw, scale, 0, 0, 1, x.shape[0], x.shape[1], 1, 1, x.shape[1], 1, x.shape[1], 0, 0, 0, 0};
+                                                     ^
+          detected during:
+            instantiation of "void SIGMAKeygen<T>::SIGMALayernormKeygen(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64, __nv_bool) [with T=u64]" at line 362
+            instantiation of "void SIGMAKeygen<T>::layernorm(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64) [with T=u64]" at line 303
+            instantiation of "SIGMAKeygen<T>::SIGMAKeygen(int, int, int, std::string, size_t) [with T=u64]" at line 189 of /workspace/fss_build/sigma_mini.cu
+
+./backend/sigma.h(347): warning #2361-D: invalid narrowing conversion from "unsigned long" to "int"
+          AvgPoolParams p = {bw, bw, scale, 0, 0, 1, x.shape[0], x.shape[1], 1, 1, x.shape[1], 1, x.shape[1], 0, 0, 0, 0};
+                                                                 ^
+          detected during:
+            instantiation of "void SIGMAKeygen<T>::SIGMALayernormKeygen(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64, __nv_bool) [with T=u64]" at line 362
+            instantiation of "void SIGMAKeygen<T>::layernorm(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64) [with T=u64]" at line 303
+            instantiation of "SIGMAKeygen<T>::SIGMAKeygen(int, int, int, std::string, size_t) [with T=u64]" at line 189 of /workspace/fss_build/sigma_mini.cu
+
+./backend/sigma.h(347): warning #2361-D: invalid narrowing conversion from "unsigned long" to "int"
+          AvgPoolParams p = {bw, bw, scale, 0, 0, 1, x.shape[0], x.shape[1], 1, 1, x.shape[1], 1, x.shape[1], 0, 0, 0, 0};
+                                                                                   ^
+          detected during:
+            instantiation of "void SIGMAKeygen<T>::SIGMALayernormKeygen(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64, __nv_bool) [with T=u64]" at line 362
+            instantiation of "void SIGMAKeygen<T>::layernorm(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64) [with T=u64]" at line 303
+            instantiation of "SIGMAKeygen<T>::SIGMAKeygen(int, int, int, std::string, size_t) [with T=u64]" at line 189 of /workspace/fss_build/sigma_mini.cu
+
+./backend/sigma.h(347): warning #2361-D: invalid narrowing conversion from "unsigned long" to "int"
+          AvgPoolParams p = {bw, bw, scale, 0, 0, 1, x.shape[0], x.shape[1], 1, 1, x.shape[1], 1, x.shape[1], 0, 0, 0, 0};
+                                                                                                  ^
+          detected during:
+            instantiation of "void SIGMAKeygen<T>::SIGMALayernormKeygen(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64, __nv_bool) [with T=u64]" at line 362
+            instantiation of "void SIGMAKeygen<T>::layernorm(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64) [with T=u64]" at line 303
+            instantiation of "SIGMAKeygen<T>::SIGMAKeygen(int, int, int, std::string, size_t) [with T=u64]" at line 189 of /workspace/fss_build/sigma_mini.cu
+
+./backend/sigma.h(372): warning #2361-D: invalid narrowing conversion from "unsigned long" to "int"
+          MHAParams pMHA = {X.d1, n_embed, n_heads, dim_W, selfAttn, doNormQKt, doRotEmb};
+                            ^
+          detected during:
+            instantiation of "void SIGMAKeygen<T>::mha(int, int, int, __nv_bool, __nv_bool, __nv_bool, const Tensor2D<T> &, const Tensor1D<T> &, const Tensor2D<T> &, const Tensor1D<T> &, const Tensor2D<T> &, Tensor2D<T> &) [with T=u64]" at line 303
+            instantiation of "SIGMAKeygen<T>::SIGMAKeygen(int, int, int, std::string, size_t) [with T=u64]" at line 189 of /workspace/fss_build/sigma_mini.cu
+
+./fss/gpu_select.cu(100): warning #68-D: integer conversion resulted in a change of sign
+              oneBitDcfK2[i] = -2 * maskX[i];
+                               ^
+          detected during:
+            instantiation of "void keyGenSelectKernel(int, TMaskB *, TIn *, TOut *, TOut *, TOut *, TOut *, int) [with TIn=u64, TOut=u16, TMaskB=u64]" at line 124
+            instantiation of "TOut *gpuKeyGenSelect<TIn,TOut,TMaskB>(uint8_t **, int, int, TIn *, TMaskB *, int, __nv_bool) [with TIn=u64, TOut=u16, TMaskB=u64]" at line 101 of ./fss/gpu_relu.cu
+            instantiation of "TOut *gpuGenReluKey<TIn,TOut,p,q,flipDRelu>(uint8_t **, int, int, int, int, TIn *, AESGlobalContext *) [with TIn=u64, TOut=u16, p=65535UL, q=65535UL, flipDRelu=true]" at line 36 of ./fss/gpu_nexp.cu
+            instantiation of "T *gpuKeygenNExp(u8 **, int, int, int, int, int, T *, AESGlobalContext *) [with T=u64]" at line 81 of ./fss/gpu_softmax.cu
+            instantiation of "T *gpuKeygenSoftmax(u8 **, int, MaxpoolParams, T *, AESGlobalContext *) [with T=u64]" at line 135 of ./fss/gpu_mha.cu
+            instantiation of "T *gpuKeygenMHA(u8 **, int, int, int, MHAParams, MHAMulParams, T *, T *, T *, T *, T *, AESGlobalContext *) [with T=u64]" at line 374 of ./backend/sigma.h
+            instantiation of "void SIGMAKeygen<T>::mha(int, int, int, __nv_bool, __nv_bool, __nv_bool, const Tensor2D<T> &, const Tensor1D<T> &, const Tensor2D<T> &, const Tensor1D<T> &, const Tensor2D<T> &, Tensor2D<T> &) [with T=u64]" at line 303 of ./backend/sigma.h
+            instantiation of "SIGMAKeygen<T>::SIGMAKeygen(int, int, int, std::string, size_t) [with T=u64]" at line 189 of /workspace/fss_build/sigma_mini.cu
+
+./backend/sigma.h(178): warning #2361-D: invalid narrowing conversion from "unsigned long" to "int"
+          AvgPoolParams p = {bw, bw, scale, 0, 0, 1, x.shape[0], x.shape[1], 1, 1, x.shape[1], 1, x.shape[1], 0, 0, 0, 0};
+                                     ^
+          detected during:
+            instantiation of "void SIGMA<T>::SIGMALayernorm(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64, __nv_bool) [with T=u64]" at line 197
+            instantiation of "void SIGMA<T>::layernorm(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64) [with T=u64]" at line 116
+            instantiation of "SIGMA<T>::SIGMA(int, std::string, std::string, int, int, int, int, int, __nv_bool) [with T=u64]" at line 209 of /workspace/fss_build/sigma_mini.cu
+
+./backend/sigma.h(178): warning #2361-D: invalid narrowing conversion from "unsigned long" to "int"
+          AvgPoolParams p = {bw, bw, scale, 0, 0, 1, x.shape[0], x.shape[1], 1, 1, x.shape[1], 1, x.shape[1], 0, 0, 0, 0};
+                                                     ^
+          detected during:
+            instantiation of "void SIGMA<T>::SIGMALayernorm(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64, __nv_bool) [with T=u64]" at line 197
+            instantiation of "void SIGMA<T>::layernorm(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64) [with T=u64]" at line 116
+            instantiation of "SIGMA<T>::SIGMA(int, std::string, std::string, int, int, int, int, int, __nv_bool) [with T=u64]" at line 209 of /workspace/fss_build/sigma_mini.cu
+
+./backend/sigma.h(178): warning #2361-D: invalid narrowing conversion from "unsigned long" to "int"
+          AvgPoolParams p = {bw, bw, scale, 0, 0, 1, x.shape[0], x.shape[1], 1, 1, x.shape[1], 1, x.shape[1], 0, 0, 0, 0};
+                                                                 ^
+          detected during:
+            instantiation of "void SIGMA<T>::SIGMALayernorm(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64, __nv_bool) [with T=u64]" at line 197
+            instantiation of "void SIGMA<T>::layernorm(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64) [with T=u64]" at line 116
+            instantiation of "SIGMA<T>::SIGMA(int, std::string, std::string, int, int, int, int, int, __nv_bool) [with T=u64]" at line 209 of /workspace/fss_build/sigma_mini.cu
+
+./backend/sigma.h(178): warning #2361-D: invalid narrowing conversion from "unsigned long" to "int"
+          AvgPoolParams p = {bw, bw, scale, 0, 0, 1, x.shape[0], x.shape[1], 1, 1, x.shape[1], 1, x.shape[1], 0, 0, 0, 0};
+                                                                                   ^
+          detected during:
+            instantiation of "void SIGMA<T>::SIGMALayernorm(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64, __nv_bool) [with T=u64]" at line 197
+            instantiation of "void SIGMA<T>::layernorm(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64) [with T=u64]" at line 116
+            instantiation of "SIGMA<T>::SIGMA(int, std::string, std::string, int, int, int, int, int, __nv_bool) [with T=u64]" at line 209 of /workspace/fss_build/sigma_mini.cu
+
+./backend/sigma.h(178): warning #2361-D: invalid narrowing conversion from "unsigned long" to "int"
+          AvgPoolParams p = {bw, bw, scale, 0, 0, 1, x.shape[0], x.shape[1], 1, 1, x.shape[1], 1, x.shape[1], 0, 0, 0, 0};
+                                                                                                  ^
+          detected during:
+            instantiation of "void SIGMA<T>::SIGMALayernorm(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64, __nv_bool) [with T=u64]" at line 197
+            instantiation of "void SIGMA<T>::layernorm(const Tensor1D<T> &, const Tensor1D<T> &, const Tensor<T> &, Tensor<T> &, u64) [with T=u64]" at line 116
+            instantiation of "SIGMA<T>::SIGMA(int, std::string, std::string, int, int, int, int, int, __nv_bool) [with T=u64]" at line 209 of /workspace/fss_build/sigma_mini.cu
+
+BUILD_EXIT=0

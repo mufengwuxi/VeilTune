@@ -1,0 +1,14 @@
+Total time=303122 us
+Comm time=22278 us
+Transfer time=110543 us
+MHA time=169769 us
+Matmul time=15565 us
+Truncate time=19694 us
+Gelu time=17063 us
+Softmax time=111041 us
+Layernorm time=79781 us
+
+Total Comm=10407698 B (0.009693 GB)
+Gelu Comm=2375680 B (0.002213 GB)
+Softmax Comm=486848 B (0.000453 GB)
+Layernorm Comm=1670480 B (0.001556 GB)

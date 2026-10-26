@@ -1,0 +1,20 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 394/394 [00:00<00:00, 9904.26it/s]
+{"stage": "owner_pretrain", "dev": 0.896484375, "test": 0.9048165137614679, "sec": 45.6}
+{"stage": "theta0", "test": 0.9048165137614679, "n_client": 32}
+{"stage": "protocol", "steps": 1000, "test_thetaT": 0.8990825688073395, "sec": 68.9}
+{"stage": "baseline_local", "test": 0.8337155963302753, "agree_thetaT": 0.8795871559633027}
+{"stage": "baseline_zeroshot", "test": 0.7637614678899083}
+/workspace/veiltune/rl_leak.py:183: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  hist.append(dict(it=it, mse=float(F.mse_loss(pred, obs_h[sel])), dW_rel_err_mean=sum(rel) / len(rel),
+{"stage": "attack_fit_logits", "K": 1, "reveal": "logits", "it": 3000, "mse": 0.007546182256191969, "dW_rel_err_mean": 1.840583856648462, "dW_rel_err": [1.9947243223154039, 1.961574179400814, 2.0643805875907835, 1.5905707687713022, 1.9088521903701778, 1.7813044248837613, 1.8079251157465224, 1.6153392641089308], "test": 0.8853211009174312, "agree_thetaT": 0.9655963302752294}
+{"stage": "attack_fit_logits+y", "K": 1, "reveal": "logits", "it": 3000, "mse": 0.0035297272261232138, "dW_rel_err_mean": 1.8805071496203687, "dW_rel_err": [2.063282889064659, 1.9740560133010348, 2.138265018542655, 1.6188457039259587, 1.9517047052720322, 1.808801069758183, 1.8576856273343436, 1.6314161697640832], "test": 0.8841743119266054, "agree_thetaT": 0.9575688073394495}
+{"stage": "attack_fit_logits", "K": 20, "reveal": "logits", "it": 3000, "mse": 0.007249876856803894, "dW_rel_err_mean": 1.9835346394811915, "dW_rel_err": [2.236307322933793, 1.9475093602217917, 2.331165981937671, 1.6992302305229205, 2.0876526448953627, 1.879666372069986, 1.907126182478481, 1.7796190207895257], "test": 0.8864678899082569, "agree_thetaT": 0.9621559633027523}
+{"stage": "attack_fit_logits+y", "K": 20, "reveal": "logits", "it": 3000, "mse": 0.004645499400794506, "dW_rel_err_mean": 1.8789751634031828, "dW_rel_err": [2.1330851154813253, 1.8526245157571612, 2.1845543133378835, 1.623716047308174, 1.9559239748121477, 1.7943418236437298, 1.8178848552614326, 1.6696706616236077], "test": 0.8887614678899083, "agree_thetaT": 0.9644495412844036}
+{"stage": "attack_fit_logits", "K": 100, "reveal": "logits", "it": 3000, "mse": 0.02084798738360405, "dW_rel_err_mean": 2.1008968363966654, "dW_rel_err": [2.414703088632539, 2.4970863227296287, 2.265312666384652, 1.7425404051380902, 2.2050303770418136, 1.8445986344310534, 2.0899287396185304, 1.7479744571970173], "test": 0.8979357798165137, "agree_thetaT": 0.9621559633027523}
+{"stage": "attack_fit_logits+y", "K": 100, "reveal": "logits", "it": 3000, "mse": 0.022001320496201515, "dW_rel_err_mean": 2.0884871608978828, "dW_rel_err": [2.4225888887315876, 2.3950916090153465, 2.2422669006244504, 1.7459915951133156, 2.178197401364161, 1.8578959752899429, 2.140502143861268, 1.7253627731829912], "test": 0.8990825688073395, "agree_thetaT": 0.963302752293578}
+{"stage": "reference", "dW_rel_err_theta0_vs_T": 0.6894713017012679, "dW_norm_T": [3.0559677544444352, 2.1158246620633774, 3.1413171297465015, 1.6849799437602129, 3.6168172151077167, 1.6292672249133302, 3.7065867737603764, 1.5059092297329173]}
+LEAK_DONE

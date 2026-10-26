@@ -1,0 +1,147 @@
+{
+ "rank": 0,
+ "per_rank": {
+  "rank0": {
+   "b1_L10": {
+    "step_s": 6.661987781524658,
+    "dealer_s": 1.121740690432489,
+    "online_net_s": 5.540247091092169,
+    "tuples": {
+     "generate_additive_triple": 876,
+     "generate_binary_triple": 1256,
+     "B2A_rng": 188,
+     "square": 72
+    },
+    "comm_rounds": 2394,
+    "comm_bytes": 83322368,
+    "comm_time_s": 2.002165005542338,
+    "ttp_requests": 0,
+    "ttp_request_s": 0.0,
+    "ttp_rounds": 0,
+    "ttp_bytes": 0,
+    "p01_rounds": 2394,
+    "p01_bytes": 83322368
+   },
+   "b64": {
+    "step_s": 18.84662961959839,
+    "dealer_s": 1.520333451218903,
+    "online_net_s": 17.326296168379486,
+    "tuples": {
+     "generate_additive_triple": 888,
+     "generate_binary_triple": 1284,
+     "B2A_rng": 192,
+     "square": 72
+    },
+    "comm_rounds": 2438,
+    "comm_bytes": 21535596544,
+    "comm_time_s": 11.441785360686481,
+    "ttp_requests": 0,
+    "ttp_request_s": 0.0,
+    "ttp_rounds": 0,
+    "ttp_bytes": 0,
+    "p01_rounds": 2438,
+    "p01_bytes": 21535596544
+   }
+  },
+  "rank1": {
+   "b1_L10": {
+    "step_s": 6.66208815574646,
+    "dealer_s": 1.0922234868630767,
+    "online_net_s": 5.569864668883383,
+    "tuples": {
+     "generate_additive_triple": 876,
+     "generate_binary_triple": 1256,
+     "B2A_rng": 188,
+     "square": 72
+    },
+    "comm_rounds": 2394,
+    "comm_bytes": 83322368,
+    "comm_time_s": 1.899163662455976,
+    "ttp_requests": 0,
+    "ttp_request_s": 0.0,
+    "ttp_rounds": 0,
+    "ttp_bytes": 0,
+    "p01_rounds": 2394,
+    "p01_bytes": 83322368
+   },
+   "b64": {
+    "step_s": 18.84665060043335,
+    "dealer_s": 1.6484917672351003,
+    "online_net_s": 17.19815883319825,
+    "tuples": {
+     "generate_additive_triple": 888,
+     "generate_binary_triple": 1284,
+     "B2A_rng": 192,
+     "square": 72
+    },
+    "comm_rounds": 2438,
+    "comm_bytes": 21535596544,
+    "comm_time_s": 10.601102280430496,
+    "ttp_requests": 0,
+    "ttp_request_s": 0.0,
+    "ttp_rounds": 0,
+    "ttp_bytes": 0,
+    "p01_rounds": 2438,
+    "p01_bytes": 21535596544
+   }
+  }
+ },
+ "timing": {
+  "b1_L10": {
+   "provider": "TFP",
+   "batch": 1,
+   "seq": 10,
+   "max_valid": 10,
+   "times_s": [
+    6.496505498886108,
+    6.7156758308410645,
+    6.708139657974243
+   ],
+   "step_s_median": 6.708139657974243,
+   "warmup_s": 6.645569562911987
+  },
+  "b64": {
+   "provider": "TFP",
+   "batch": 64,
+   "seq": 38,
+   "max_valid": 38,
+   "times_s": [
+    19.21925926208496,
+    19.129401445388794,
+    18.75800395011902
+   ],
+   "step_s_median": 19.129401445388794,
+   "warmup_s": 19.30813694000244
+  }
+ },
+ "comm_total_bytes_both_ranks": 43237837824,
+ "comm_total_MB": 43237.84,
+ "per_label": {
+  "b1_L10": {
+   "rounds_rank0": 2394,
+   "rounds_rank1": 2394,
+   "p01_rounds": 2394,
+   "p01_logged_bytes_both": 166644736,
+   "p01_wire_bytes": 83322368.0,
+   "ttp_requests": 0,
+   "ttp_request_s": 0.0,
+   "ttp_logged_bytes": 0,
+   "dealer_s_rank0": 1.121740690432489,
+   "dealer_s_rank1": 1.0922234868630767,
+   "step_s_instrumented": 6.661987781524658
+  },
+  "b64": {
+   "rounds_rank0": 2438,
+   "rounds_rank1": 2438,
+   "p01_rounds": 2438,
+   "p01_logged_bytes_both": 43071193088,
+   "p01_wire_bytes": 21535596544.0,
+   "ttp_requests": 0,
+   "ttp_request_s": 0.0,
+   "ttp_logged_bytes": 0,
+   "dealer_s_rank0": 1.520333451218903,
+   "dealer_s_rank1": 1.6484917672351003,
+   "step_s_instrumented": 18.84662961959839
+  }
+ }
+}

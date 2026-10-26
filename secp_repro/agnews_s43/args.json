@@ -1,0 +1,1 @@
+{"seed": 43, "kshot": 16, "n_prompt": 50, "dim": 500, "pop": 20, "sigma": 1.0, "budget": 8000, "eval_every": 25, "chunk": 64, "out": "secp_repro/agnews_s43", "task": "agnews", "n_train": 64}

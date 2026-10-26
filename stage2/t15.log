@@ -1,0 +1,3 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 8386.61it/s]
+T15 {"train": {"spread_max": 46.89084243774414, "spread_q999": 27.437007904052734, "spread_q99": 19.888504028320312, "score_absmax": 260.114990234375, "gelu_absmax": 35.74781036376953, "gelu_frac_ge4": 0.002087129047140479, "gelu_q9999": 6.084455490112305}, "heldout": {"spread_max": 46.201045989990234, "spread_q999": 27.465450286865234, "spread_q99": 20.04521942138672, "score_absmax": 284.00482177734375, "gelu_absmax": 35.37331771850586, "gelu_frac_ge4": 0.0020846696570515633, "gelu_q9999": 6.110888481140137}}

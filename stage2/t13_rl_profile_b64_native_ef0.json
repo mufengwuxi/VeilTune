@@ -1,0 +1,302 @@
+{
+ "0": {
+  "rank": 0,
+  "total_s": 28.555640552192926,
+  "rounds": 3492,
+  "bytes": 39256328208.0,
+  "N_real": 1156,
+  "T": 49,
+  "rows": [
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "softmax_save",
+    "prim": "max",
+    "rounds": 1104,
+    "bytes": 14395090944.0,
+    "calls": 1104
+   },
+   {
+    "phase": "fwd",
+    "outer": "gelu_save",
+    "inner": "gelu_save",
+    "prim": "mul",
+    "rounds": 420,
+    "bytes": 9882199480.0,
+    "calls": 420
+   },
+   {
+    "phase": "fwd",
+    "outer": "gelu_save",
+    "inner": "gelu_save",
+    "prim": "cmp",
+    "rounds": 160,
+    "bytes": 7905749192.0,
+    "calls": 160
+   },
+   {
+    "phase": "bwd",
+    "outer": "linear",
+    "inner": "linear",
+    "prim": "matmul",
+    "rounds": 184,
+    "bytes": 2027473936.0,
+    "calls": 184
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "softmax_save",
+    "prim": "mul",
+    "rounds": 592,
+    "bytes": 1732581536.0,
+    "calls": 592
+   },
+   {
+    "phase": "fwd",
+    "outer": "linear",
+    "inner": "linear",
+    "prim": "matmul",
+    "rounds": 96,
+    "bytes": 1024330304.0,
+    "calls": 96
+   },
+   {
+    "phase": "bwd",
+    "outer": "ln_bwd",
+    "inner": "ln_bwd",
+    "prim": "mul",
+    "rounds": 108,
+    "bytes": 642553128.0,
+    "calls": 108
+   },
+   {
+    "phase": "bwd",
+    "outer": "softmax_bwd",
+    "inner": "softmax_bwd",
+    "prim": "mul",
+    "rounds": 32,
+    "bytes": 594085952.0,
+    "calls": 32
+   },
+   {
+    "phase": "bwd",
+    "outer": "linear",
+    "inner": "linear",
+    "prim": "mul",
+    "rounds": 20,
+    "bytes": 581305560.0,
+    "calls": 20
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "inner": "ln_save",
+    "prim": "mul",
+    "rounds": 684,
+    "bytes": 470889576.0,
+    "calls": 684
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "_sigmoid",
+    "prim": "cmp",
+    "rounds": 32,
+    "bytes": 36840.0,
+    "calls": 32
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "_sigmoid",
+    "prim": "mul",
+    "rounds": 60,
+    "bytes": 31760.0,
+    "calls": 60
+   }
+  ],
+  "time": [
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "s": 9.879445228725672
+   },
+   {
+    "phase": "fwd",
+    "outer": "gelu_save",
+    "s": 8.45528506860137
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "s": 1.2406031116843224
+   },
+   {
+    "phase": "bwd",
+    "outer": "ln_bwd",
+    "s": 0.4282916933298111
+   },
+   {
+    "phase": "bwd",
+    "outer": "softmax_bwd",
+    "s": 0.2902693673968315
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "s": 0.12537089362740517
+   }
+  ]
+ },
+ "1": {
+  "rank": 1,
+  "total_s": 28.529216151684523,
+  "rounds": 873,
+  "bytes": 30508881152,
+  "N_real": 1156,
+  "T": 49,
+  "rows": [
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "softmax_save",
+    "prim": "max",
+    "rounds": 276,
+    "bytes": 11408834560,
+    "calls": 276
+   },
+   {
+    "phase": "fwd",
+    "outer": "gelu_save",
+    "inner": "gelu_save",
+    "prim": "mul",
+    "rounds": 105,
+    "bytes": 7440695296,
+    "calls": 105
+   },
+   {
+    "phase": "fwd",
+    "outer": "gelu_save",
+    "inner": "gelu_save",
+    "prim": "cmp",
+    "rounds": 40,
+    "bytes": 6278086656,
+    "calls": 40
+   },
+   {
+    "phase": "bwd",
+    "outer": "linear",
+    "inner": "linear",
+    "prim": "matmul",
+    "rounds": 46,
+    "bytes": 1636279040,
+    "calls": 46
+   },
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "inner": "softmax_save",
+    "prim": "mul",
+    "rounds": 148,
+    "bytes": 1163919360,
+    "calls": 148
+   },
+   {
+    "phase": "fwd",
+    "outer": "linear",
+    "inner": "linear",
+    "prim": "matmul",
+    "rounds": 24,
+    "bytes": 820246272,
+    "calls": 24
+   },
+   {
+    "phase": "bwd",
+    "outer": "softmax_bwd",
+    "inner": "softmax_bwd",
+    "prim": "mul",
+    "rounds": 8,
+    "bytes": 475267072,
+    "calls": 8
+   },
+   {
+    "phase": "bwd",
+    "outer": "ln_bwd",
+    "inner": "ln_bwd",
+    "prim": "mul",
+    "rounds": 27,
+    "bytes": 467368704,
+    "calls": 27
+   },
+   {
+    "phase": "bwd",
+    "outer": "linear",
+    "inner": "linear",
+    "prim": "mul",
+    "rounds": 5,
+    "bytes": 465043456,
+    "calls": 5
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "inner": "ln_save",
+    "prim": "mul",
+    "rounds": 171,
+    "bytes": 353092608,
+    "calls": 171
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "_sigmoid",
+    "prim": "cmp",
+    "rounds": 8,
+    "bytes": 27648,
+    "calls": 8
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "inner": "_sigmoid",
+    "prim": "mul",
+    "rounds": 15,
+    "bytes": 20480,
+    "calls": 15
+   }
+  ],
+  "time": [
+   {
+    "phase": "fwd",
+    "outer": "softmax_save",
+    "s": 9.892439633607864
+   },
+   {
+    "phase": "fwd",
+    "outer": "gelu_save",
+    "s": 8.457748498767614
+   },
+   {
+    "phase": "fwd",
+    "outer": "ln_save",
+    "s": 1.2424542345106602
+   },
+   {
+    "phase": "bwd",
+    "outer": "ln_bwd",
+    "s": 0.42951826751232147
+   },
+   {
+    "phase": "bwd",
+    "outer": "softmax_bwd",
+    "s": 0.30259179696440697
+   },
+   {
+    "phase": "fwd",
+    "outer": "_sigmoid",
+    "s": 0.12178974598646164
+   }
+  ]
+ }
+}
