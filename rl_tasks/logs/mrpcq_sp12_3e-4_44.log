@@ -1,0 +1,20 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 394/394 [00:00<00:00, 7843.21it/s]
+{"step": 0, "dev_acc": 0.6484375, "dev_loss": 0.8098730444908142, "test_acc": 0.678921568627451}
+/workspace/veiltune/rl_plain.py:248: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  c = float(loss)
+{"step": 50, "dev_acc": 0.65625, "dev_loss": 1.5620706677436829, "test_acc": 0.6985294117647058, "mean_abs_c": 0.1388378102236311, "sec": 5.4}
+{"step": 100, "dev_acc": 0.658203125, "dev_loss": 1.6996554136276245, "test_acc": 0.7009803921568627, "mean_abs_c": 7.185933478467632e-05, "sec": 10.9}
+{"step": 150, "dev_acc": 0.66015625, "dev_loss": 1.7551421523094177, "test_acc": 0.7058823529411765, "mean_abs_c": 3.535011976055102e-05, "sec": 16.4}
+{"step": 200, "dev_acc": 0.6640625, "dev_loss": 1.7956127524375916, "test_acc": 0.6985294117647058, "mean_abs_c": 2.431113229249604e-05, "sec": 22.4}
+{"step": 250, "dev_acc": 0.6640625, "dev_loss": 1.8302804827690125, "test_acc": 0.6985294117647058, "mean_abs_c": 1.8068584613502025e-05, "sec": 28.2}
+{"step": 300, "dev_acc": 0.6640625, "dev_loss": 1.8607118129730225, "test_acc": 0.6985294117647058, "mean_abs_c": 1.404611215548357e-05, "sec": 34.1}
+{"step": 350, "dev_acc": 0.666015625, "dev_loss": 1.887925624847412, "test_acc": 0.6985294117647058, "mean_abs_c": 1.1266316050750902e-05, "sec": 39.9}
+{"step": 400, "dev_acc": 0.662109375, "dev_loss": 1.912560224533081, "test_acc": 0.6985294117647058, "mean_abs_c": 9.24532332646777e-06, "sec": 45.8}
+{"step": 450, "dev_acc": 0.6640625, "dev_loss": 1.9351279735565186, "test_acc": 0.7009803921568627, "mean_abs_c": 7.72737359511666e-06, "sec": 51.7}
+{"step": 500, "dev_acc": 0.666015625, "dev_loss": 1.956003189086914, "test_acc": 0.6985294117647058, "mean_abs_c": 6.55735482723685e-06, "sec": 57.4}
+{"step": 550, "dev_acc": 0.666015625, "dev_loss": 1.9753551483154297, "test_acc": 0.6985294117647058, "mean_abs_c": 5.6253752518387046e-06, "sec": 63.7}
+{"step": 600, "dev_acc": 0.666015625, "dev_loss": 1.9934620261192322, "test_acc": 0.6985294117647058, "mean_abs_c": 4.878910949628335e-06, "sec": 70.8}

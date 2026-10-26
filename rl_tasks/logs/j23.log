@@ -1,0 +1,25 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 394/394 [00:00<00:00, 12854.55it/s]
+Traceback (most recent call last):
+  File "/workspace/veiltune/rl_plain.py", line 270, in <module>
+    main()
+  File "/workspace/veiltune/rl_plain.py", line 231, in main
+    record(0)
+  File "/workspace/veiltune/rl_plain.py", line 227, in record
+    dacc, dloss = evaluate('tune'); tacc, _ = evaluate('heldout')
+                  ^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/rl_plain.py", line 208, in evaluate
+    lo = fwd(master, b)
+         ^^^^^^^^^^^^^^
+  File "/workspace/veiltune/rl_plain.py", line 201, in <lambda>
+    fwd = lambda th, b: tail.forward([t.float() for t in th], *b[:3], lab)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/veiltune/rl_plain.py", line 151, in forward
+    z = F.gelu(x @ P['Wf1'].T + P['bf1'])
+               ~~~~~~~~~~~~~~~^~~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 496.00 MiB. GPU 0 has a total capacity of 31.36 GiB of which 311.06 MiB is free. Process 9943 has 3.74 GiB memory in use. Process 10100 has 3.74 GiB memory in use. Process 10237 has 3.56 GiB memory in use. Process 10988 has 3.54 GiB memory in use. Process 13098 has 6.76 GiB memory in use. Process 13156 has 6.76 GiB memory in use. Including non-PyTorch memory, this process has 2.91 GiB memory in use. Of the allocated memory 2.28 GiB is allocated by PyTorch, and 22.17 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

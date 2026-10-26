@@ -1,0 +1,1 @@
+{"method": "fo", "data": "k16", "split_at": 16, "lora_layers": null, "rank": 4, "lr": 0.001, "eps": 0.001, "batch": 32, "steps": 1000, "eval_every": 50, "seed": 44, "out": "rl_tasks/agnews_fo_k16_sp16_lr1e-3_s44", "opt": "adamw", "n_train": 64}
