@@ -1,0 +1,2 @@
+{"step": 0, "dev_acc": 0.734375, "dev_loss": 0.7076945167287122, "test_acc": 0.744, "plain_dev_acc": 0.734375, "plain_test_acc": 0.744, "rel_dist_to_plain": 0.0002455101566773803}
+{"step": 3, "dev_acc": 0.798828125, "dev_loss": 0.5650599011053501, "test_acc": 0.8055, "plain_dev_acc": 0.787109375, "plain_test_acc": 0.7935, "rel_dist_to_plain": 0.019371231097840724, "step_s_mean": 153.01090769221386, "last_rounds": 5512, "last_bytes": 99734587232.0, "train_loss_plain": 0.6210235818367104, "diag_gmax": [], "skipped": [], "state_fixed": []}
