@@ -1,0 +1,35 @@
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 394/394 [00:00<00:00, 7166.02it/s]
+
+Loading weights: 100%|██████████| 394/394 [00:00<00:00, 8165.45it/s]
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/provider/ttp_provider.py:40: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c_size = getattr(torch, op)(a, b, *args, **kwargs).size()
+T16 {"step": 0, "dev_acc": 0.5, "dev_loss": 1.1266257046513313, "test_acc": 0.516245487364621, "plain_dev_acc": 0.5, "plain_test_acc": 0.516245487364621, "rel_dist_to_plain": 0.0002455101566773803}
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/provider/ttp_provider.py:317: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c = getattr(torch, op)(a, b, *args, **kwargs)
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/beaver.py:82: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c._tensor += getattr(torch, op)(epsilon, b._tensor, *args, **kwargs)
+/workspace/veiltune/stage2/t30_secure_train_qdiag.py:179: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  record(step, dict(step_s_mean=tsum / nstep, last_rounds=rr, last_bytes=bb, train_loss_plain=float(loss), diag_gmax=diag, skipped=skips, state_fixed=stfix, qbad=qbad, qerr=qerr, qbad_applied=qbad_applied))
+T16 {"step": 20, "dev_acc": 0.5265306122448979, "dev_loss": 0.9016328745242628, "test_acc": 0.5342960288808665, "plain_dev_acc": 0.5285714285714286, "plain_test_acc": 0.5342960288808665, "rel_dist_to_plain": 0.011471669854004399, "step_s_mean": 114.68604872338474, "last_rounds": 5958, "last_bytes": 209110492032.0, "train_loss_plain": 0.506212009877287, "diag_gmax": [0.385467529296875, 16742041.545455933, 0.185516357421875, 0.1413726806640625, 16753253.150634766, 16724671.967575073, 0.5184326171875, 0.6005096435546875, 16746657.126800537, 0.4670257568359375, 0.271881103515625, 16717174.955917358, 0.2630157470703125, 16729668.130203247, 0.37298583984375, 16750241.997024536, 16730177.256851196, 0.4799041748046875, 16746140.645767212, 16734230.238861084], "skipped": [0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1], "state_fixed": [0, 262144, 0, 0, 262144, 262144, 0, 0, 262144, 0, 0, 262144, 0, 262144, 0, 262144, 262144, 0, 262144, 262144], "qbad": [5671, 5671, 43849, 35426, 35426, 35426, 28636, 25164, 28897, 28298, 28562, 29703, 25968, 26609, 22608, 25424, 26002, 22758, 23104, 23392], "qerr": [43.59340493904598, 29.00933958969234, 40.03831026032519, 41.03257132348798, 35.26974917437558, 31.016867288247347, 35.532318281453655, 38.85525123923552, 35.43466789876311, 33.66287448976526, 29.385055756321144, 27.26340055705873, 27.9129142088831, 26.080728573155014, 26.49071222274837, 24.877241120546515, 23.40877003928489, 24.52041392413826, 23.146613159265144, 21.877706778638263], "qbad_applied": [5671, 0, 43849, 35426, 0, 0, 28636, 25164, 0, 28298, 28562, 0, 25968, 0, 22608, 0, 0, 22758, 0, 0]}

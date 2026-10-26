@@ -1,0 +1,53 @@
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 0 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 2 is connected to 2 peer ranks. Expected number of connected peer ranks is : 2
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+/root/miniconda3/lib/python3.12/site-packages/crypten/__init__.py:64: RuntimeWarning: CrypTen is already initialized.
+  warnings.warn("CrypTen is already initialized.", RuntimeWarning)
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]
+Loading weights:   8%|▊         | 31/394 [00:00<00:01, 290.68it/s]
+Loading weights:   4%|▎         | 14/394 [00:00<00:02, 139.88it/s]
+Loading weights:  15%|█▌        | 61/394 [00:00<00:01, 278.76it/s]
+Loading weights:   9%|▉         | 36/394 [00:00<00:02, 175.92it/s]
+Loading weights:  29%|██▊       | 113/394 [00:00<00:00, 380.53it/s]
+Loading weights:  14%|█▍        | 57/394 [00:00<00:01, 186.06it/s]
+Loading weights:  44%|████▍     | 175/394 [00:00<00:00, 471.28it/s]
+Loading weights:  20%|██        | 79/394 [00:00<00:01, 198.07it/s]
+Loading weights:  69%|██████▊   | 270/394 [00:00<00:00, 630.21it/s]
+Loading weights:  28%|██▊       | 112/394 [00:00<00:01, 244.37it/s]
+Loading weights:  87%|████████▋ | 341/394 [00:00<00:00, 655.95it/s]
+Loading weights: 100%|██████████| 394/394 [00:00<00:00, 604.81it/s]
+
+Loading weights:  79%|███████▉  | 313/394 [00:00<00:00, 834.08it/s]
+Loading weights: 100%|██████████| 394/394 [00:00<00:00, 629.20it/s]
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/provider/ttp_provider.py:40: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c_size = getattr(torch, op)(a, b, *args, **kwargs).size()
+T16 {"step": 0, "dev_acc": 0.771484375, "dev_loss": 0.48243498219974645, "test_acc": 0.7637614678899083, "plain_dev_acc": 0.771484375, "plain_test_acc": 0.7637614678899083, "rel_dist_to_plain": 0.0002455101566773803}
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/provider/ttp_provider.py:317: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c = getattr(torch, op)(a, b, *args, **kwargs)
+/root/miniconda3/lib/python3.12/site-packages/crypten/mpc/primitives/beaver.py:82: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:338.)
+  c._tensor += getattr(torch, op)(epsilon, b._tensor, *args, **kwargs)
+/workspace/veiltune/stage2/t16_secure_train.py:174: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  record(step, dict(step_s_mean=tsum / nstep, last_rounds=rr, last_bytes=bb, train_loss_plain=float(loss), diag_gmax=diag, skipped=skips, state_fixed=stfix))
+T16 {"step": 25, "dev_acc": 0.806640625, "dev_loss": 0.4082409160473632, "test_acc": 0.8084862385321101, "plain_dev_acc": 0.806640625, "plain_test_acc": 0.8096330275229358, "rel_dist_to_plain": 0.008922934286324208, "step_s_mean": 42.716963058114054, "last_rounds": 7526, "last_bytes": 44531557656.0, "train_loss_plain": 0.24058285725104644, "diag_gmax": [16729820.293258667, 132.687744140625, 0.1677093505859375, 16774294.706924438, 0.1301727294921875, 0.11981201171875, 0.12567138671875, 1407.0113830566406, 0.0893402099609375, 0.154876708984375, 0.1263580322265625, 0.143951416015625, 0.1618194580078125, 0.1796875, 16724993.063964844, 0.197418212890625, 0.213531494140625, 0.2286224365234375, 0.2426605224609375, 0.25506591796875, 0.265838623046875, 0.2741546630859375, 16766350.116592407, 0.2811431884765625, 0.28692626953125], "skipped": [1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], "state_fixed": [262144, 262144, 0, 262144, 0, 0, 0, 262144, 0, 0, 0, 0, 0, 0, 262144, 0, 0, 0, 0, 0, 0, 0, 262144, 0, 0]}
+T16 {"step": 50, "dev_acc": 0.837890625, "dev_loss": 0.41955619247689807, "test_acc": 0.8577981651376146, "plain_dev_acc": 0.837890625, "plain_test_acc": 0.8577981651376146, "rel_dist_to_plain": 0.012752589829325844, "step_s_mean": 50.68070005863905, "last_rounds": 7526, "last_bytes": 44531557656.0, "train_loss_plain": 0.02563038535601618, "diag_gmax": [0.2891387939453125, 0.2931365966796875, 0.294189453125, 0.295166015625, 0.2896575927734375, 0.288604736328125, 0.2944183349609375, 0.2933349609375, 0.292236328125, 0.2908477783203125, 0.2841033935546875, 0.2748870849609375, 0.2750396728515625, 16723223.875488281, 0.2697906494140625, 0.2604827880859375, 0.2490081787109375, 0.236572265625, 0.2224273681640625, 0.2071990966796875, 16733943.971725464, 0.192230224609375, 0.1753997802734375, 0.15924072265625, 16750476.247253418], "skipped": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1], "state_fixed": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 262144, 0, 0, 0, 0, 0, 0, 262144, 0, 0, 0, 262144]}
+T16 {"step": 75, "dev_acc": 0.857421875, "dev_loss": 0.5558134926659068, "test_acc": 0.8772935779816514, "plain_dev_acc": 0.857421875, "plain_test_acc": 0.8772935779816514, "rel_dist_to_plain": 0.020292075893714727, "step_s_mean": 55.47161042511463, "last_rounds": 7526, "last_bytes": 44531557656.0, "train_loss_plain": 0.0005003513558378681, "diag_gmax": [0.1437835693359375, 0.12567138671875, 16689711.697616577, 0.11224365234375, 0.096954345703125, 182.10711669921875, 0.0831756591796875, 0.0709075927734375, 0.060455322265625, 0.051422119140625, 0.04345703125, 0.03643798828125, 0.0307769775390625, 0.0253753662109375, 0.0210113525390625, 0.0181732177734375, 0.0154876708984375, 0.013336181640625, 0.0117645263671875, 0.0103607177734375, 0.0096588134765625, 0.0080718994140625, 0.0075531005859375, 0.0070343017578125, 0.0069580078125], "skipped": [0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "state_fixed": [0, 0, 262144, 0, 0, 262144, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+T16 {"step": 100, "dev_acc": 0.859375, "dev_loss": 0.6261178616494429, "test_acc": 0.8795871559633027, "plain_dev_acc": 0.857421875, "plain_test_acc": 0.8795871559633027, "rel_dist_to_plain": 0.025224706477816897, "step_s_mean": 57.17670327305794, "last_rounds": 7526, "last_bytes": 44531557656.0, "train_loss_plain": 0.00016340588995631249, "diag_gmax": [0.0056915283203125, 0.0058135986328125, 0.00543212890625, 0.0055389404296875, 0.0048980712890625, 0.00469970703125, 0.004547119140625, 16721532.183959961, 0.004669189453125, 0.004150390625, 0.004180908203125, 0.0043182373046875, 0.0039520263671875, 0.0042724609375, 0.0035858154296875, 0.0037384033203125, 0.0037078857421875, 0.00384521484375, 0.003448486328125, 0.0037689208984375, 0.0040130615234375, 0.003021240234375, 0.00360107421875, 0.003570556640625, 0.0036773681640625], "skipped": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "state_fixed": [0, 0, 0, 0, 0, 0, 0, 262144, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+T16 {"step": 125, "dev_acc": 0.859375, "dev_loss": 0.6681302592691436, "test_acc": 0.8795871559633027, "plain_dev_acc": 0.857421875, "plain_test_acc": 0.8795871559633027, "rel_dist_to_plain": 0.02835132611927392, "step_s_mean": 56.16229593247175, "last_rounds": 7526, "last_bytes": 44531557656.0, "train_loss_plain": 0.00011156520598819747, "diag_gmax": [0.0031890869140625, 0.0029144287109375, 16744556.941574097, 0.00323486328125, 0.0030670166015625, 0.003204345703125, 0.0030517578125, 0.003021240234375, 0.0029754638671875, 0.0032958984375, 0.0030975341796875, 0.0029449462890625, 0.003265380859375, 0.002838134765625, 0.003173828125, 0.0034027099609375, 0.00347900390625, 0.0034637451171875, 0.00299072265625, 0.0030670166015625, 0.003143310546875, 0.0029449462890625, 0.00311279296875, 0.00274658203125, 0.003387451171875], "skipped": [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "state_fixed": [0, 0, 262144, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+T16 {"step": 150, "dev_acc": 0.861328125, "dev_loss": 0.703945838595019, "test_acc": 0.8784403669724771, "plain_dev_acc": 0.859375, "plain_test_acc": 0.8795871559633027, "rel_dist_to_plain": 0.03183746234730131, "step_s_mean": 60.02411551356315, "last_rounds": 7526, "last_bytes": 44531557656.0, "train_loss_plain": 8.865817985049401e-05, "diag_gmax": [0.0031585693359375, 0.0032958984375, 0.0028076171875, 0.0029296875, 0.002716064453125, 0.0031890869140625, 0.002716064453125, 0.00335693359375, 0.00360107421875, 0.0029296875, 0.0030517578125, 0.002899169921875, 0.003082275390625, 0.0028839111328125, 0.00299072265625, 0.0028228759765625, 16770672.840713501, 0.002960205078125, 16739015.048171997, 0.0032196044921875, 0.00274658203125, 385.1004943847656, 0.0031585693359375, 0.0029296875, 0.0030059814453125], "skipped": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0], "state_fixed": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 262144, 0, 262144, 0, 0, 262144, 0, 0, 0]}
+T16_DONE
