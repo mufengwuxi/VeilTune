@@ -1,0 +1,1 @@
+{"method": "zo", "data": "k16", "split_at": 16, "lora_layers": null, "rank": 4, "lr": 0.001, "eps": 0.001, "batch": 32, "steps": 4000, "eval_every": 100, "seed": 44, "out": "zo8/rte_lr1e-3_s44_4k", "opt": "adamw", "n_train": 32}
